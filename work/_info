@@ -1,0 +1,484 @@
+m255
+K4
+z2
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+dC:/Modeltech_pe_edu_10.4a/examples
+Eamux
+Z0 w1610293907
+Z1 DPx3 std 6 textio 0 22 zE1`LPoLg^DX3Oz^4Fj1K3
+Z2 DPx4 ieee 14 std_logic_1164 0 22 eNV`TJ_GofJTzYa?f<@Oe1
+Z3 dN:/ArchProject
+Z4 8N:\ArchProject\amux.vhd
+Z5 FN:\ArchProject\amux.vhd
+l0
+L4
+V[3;^FA3gjY2<Zl^TQRKef1
+!s100 kRa^hTn]2J2NlMUJ3R<Qi0
+Z6 OP;C;10.4a;61
+32
+Z7 !s110 1610823860
+!i10b 1
+Z8 !s108 1610823860.000000
+Z9 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|N:\ArchProject\amux.vhd|
+Z10 !s107 N:\ArchProject\amux.vhd|
+!i113 1
+Z11 o-work work -2002 -explicit -O0
+Z12 tExplicit 1
+Aa_mux
+R1
+R2
+DEx4 work 4 amux 0 22 [3;^FA3gjY2<Zl^TQRKef1
+l30
+L15
+VVBcMUH25aFVQRQQb??ALm2
+!s100 KzESTbizPWUYGNPkG[0ek1
+R6
+32
+R7
+!i10b 1
+R8
+R9
+R10
+!i113 1
+R11
+R12
+Ebmux
+Z13 w1610046182
+R1
+R2
+R3
+Z14 8N:\ArchProject\bmux.vhd
+Z15 FN:\ArchProject\bmux.vhd
+l0
+L4
+V2FYAQd02Ho^>j9hY;bKXb3
+!s100 JmzJSA[kAUkAcUW>HI4fP0
+R6
+32
+Z16 !s110 1610046585
+!i10b 1
+Z17 !s108 1610046585.000000
+Z18 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|N:\ArchProject\bmux.vhd|
+Z19 !s107 N:\ArchProject\bmux.vhd|
+!i113 1
+R11
+R12
+Ab_mux
+R1
+R2
+DEx4 work 4 bmux 0 22 2FYAQd02Ho^>j9hY;bKXb3
+l15
+L12
+V`8D4afWFnFc]PPoDIIokc1
+!s100 I0dml]n;AS<R2RUmgQM5o3
+R6
+32
+R16
+!i10b 1
+R17
+R18
+R19
+!i113 1
+R11
+R12
+Ecmux
+Z20 w1610046290
+R1
+R2
+R3
+Z21 8N:\ArchProject\cmux.vhd
+Z22 FN:\ArchProject\cmux.vhd
+l0
+L5
+VT5z31iI4Y<Qblln467eEU3
+!s100 b3W9XVfFXWm1ni:YYX36i1
+R6
+32
+R16
+!i10b 1
+R17
+Z23 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|N:\ArchProject\cmux.vhd|
+Z24 !s107 N:\ArchProject\cmux.vhd|
+!i113 1
+R11
+R12
+Ac_mux
+R1
+R2
+DEx4 work 4 cmux 0 22 T5z31iI4Y<Qblln467eEU3
+l17
+L14
+VVRRN:P2824HMKZl:kLi5^2
+!s100 H`8D8G7=Zai9Tk]P4V]@O0
+R6
+32
+R16
+!i10b 1
+R17
+R23
+R24
+!i113 1
+R11
+R12
+Edecoder
+Z25 w1605959394
+R1
+R2
+R3
+Z26 8N:/ArchProject/decoder.vhdl
+Z27 FN:/ArchProject/decoder.vhdl
+l0
+L5
+VD49==]JZE7XE5bOmX7F>E0
+!s100 V]j?JDI[LeZWz>VjPCLXQ2
+R6
+32
+Z28 !s110 1610823973
+!i10b 1
+Z29 !s108 1610823972.000000
+Z30 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|N:/ArchProject/decoder.vhdl|
+Z31 !s107 N:/ArchProject/decoder.vhdl|
+!i113 1
+R11
+R12
+Amy_decoder
+R1
+R2
+DEx4 work 7 decoder 0 22 D49==]JZE7XE5bOmX7F>E0
+l13
+L12
+VdSJ]HSl1fVhl7<UTHOO>_0
+!s100 `91chk?LkRE<JC`URNIz:3
+R6
+32
+R28
+!i10b 1
+R29
+R30
+R31
+!i113 1
+R11
+R12
+Edmux
+Z32 w1610046328
+R1
+R2
+R3
+Z33 8N:\ArchProject\dmux.vhd
+Z34 FN:\ArchProject\dmux.vhd
+l0
+L5
+VeZ@d=3G6m0^fClz6Z>SOB0
+!s100 G_2OTMg485>5mocK:8E5[0
+R6
+32
+R16
+!i10b 1
+R17
+Z35 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|N:\ArchProject\dmux.vhd|
+Z36 !s107 N:\ArchProject\dmux.vhd|
+!i113 1
+R11
+R12
+Ad_mux
+R1
+R2
+DEx4 work 4 dmux 0 22 eZ@d=3G6m0^fClz6Z>SOB0
+l17
+L14
+VcZkz44m[FKa;QKj@]mfn91
+!s100 [Rd8nWJbOl2zX4C3Kn5zY2
+R6
+32
+R16
+!i10b 1
+R17
+R35
+R36
+!i113 1
+R11
+R12
+Efinalmux
+Z37 w1610046874
+R1
+R2
+R3
+Z38 8N:\ArchProject\lab2_1_25.vhd
+Z39 FN:\ArchProject\lab2_1_25.vhd
+l0
+L4
+V<oO:Nho6nZi_mzJgnQX]@0
+!s100 W>KS56S_RS<fV=3[[i[>F0
+R6
+32
+Z40 !s110 1610046881
+!i10b 1
+Z41 !s108 1610046881.000000
+Z42 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|N:\ArchProject\lab2_1_25.vhd|
+Z43 !s107 N:\ArchProject\lab2_1_25.vhd|
+!i113 1
+R11
+R12
+Af_mux
+R1
+R2
+DEx4 work 8 finalmux 0 22 <oO:Nho6nZi_mzJgnQX]@0
+l58
+L15
+VGV3;fo:`_`kT;e51[L?8U3
+!s100 MG2H9dTXFE=0mM`DBAJbb1
+R6
+32
+R40
+!i10b 1
+R41
+R42
+R43
+!i113 1
+R11
+R12
+Elab3
+Z44 w1605956884
+R1
+R2
+R3
+Z45 8N:/ArchProject/lab3.vhdl
+Z46 FN:/ArchProject/lab3.vhdl
+l0
+L4
+V35ek`>Q[=RgFI1BjaI<FP0
+!s100 G04g3i:UCVIZ5:^G70SOP1
+R6
+32
+Z47 !s110 1610823972
+!i10b 1
+R29
+Z48 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|N:/ArchProject/lab3.vhdl|
+Z49 !s107 N:/ArchProject/lab3.vhdl|
+!i113 1
+R11
+R12
+Amy_lab3
+R1
+R2
+DEx4 work 4 lab3 0 22 35ek`>Q[=RgFI1BjaI<FP0
+l41
+L20
+VO`SEi?4N;>F?R@G^FUMLM1
+!s100 i1G4iR=^jXLiHg`X_oBo30
+R6
+32
+R47
+!i10b 1
+R29
+R48
+R49
+!i113 1
+R11
+R12
+Elab4
+Z50 w1605985194
+Z51 DPx4 ieee 11 numeric_std 0 22 :ASDNFgHXf_ih3J@9F3Ze1
+Z52 DPx4 ieee 15 std_logic_arith 0 22 [G314=:2zXJ`VORJe1J@Z1
+Z53 DPx4 ieee 18 std_logic_unsigned 0 22 ;eZjO2D4ZDz<]0>8AL<ne1
+R1
+R2
+R3
+Z54 8N:/ArchProject/lab4.vhdl
+Z55 FN:/ArchProject/lab4.vhdl
+l0
+L5
+V^Yzod_ShalTZc:4R;MSQj3
+!s100 EJkShRzSa9Hj2lb1DWo[01
+R6
+32
+R47
+!i10b 1
+R29
+Z56 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|N:/ArchProject/lab4.vhdl|
+Z57 !s107 N:/ArchProject/lab4.vhdl|
+!i113 1
+R11
+R12
+Amy_lab4
+R51
+R52
+R53
+R1
+R2
+DEx4 work 4 lab4 0 22 ^Yzod_ShalTZc:4R;MSQj3
+l73
+L23
+VXG:KI?`;?a]4CBHbPhH3M3
+!s100 KPZd3KMQ5Y[WUeW`VARoR3
+R6
+32
+R47
+!i10b 1
+R29
+R56
+R57
+!i113 1
+R11
+R12
+Emy_adder
+Z58 w1610028239
+R1
+R2
+R3
+Z59 8N:/ArchProject/nadder.vhd
+Z60 FN:/ArchProject/nadder.vhd
+l0
+L4
+VDMeWB>T<TLM1A^n;fD>KD1
+!s100 9dXSTJSA2K3laH^Pk:dhn3
+R6
+32
+R16
+!i10b 1
+R17
+Z61 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|N:/ArchProject/nadder.vhd|
+Z62 !s107 N:/ArchProject/nadder.vhd|
+!i113 1
+R11
+R12
+Aa_my_adder
+R1
+R2
+DEx4 work 8 my_adder 0 22 DMeWB>T<TLM1A^n;fD>KD1
+l10
+L9
+Vo0JSoQ4HUD?g@Q?RMU<QX2
+!s100 kMjAGce2nge1<iUcGW1eE2
+R6
+32
+R16
+!i10b 1
+R17
+R61
+R62
+!i113 1
+R11
+R12
+Emy_nadder
+R58
+R1
+R2
+R3
+R59
+R60
+l0
+L21
+Vgjfo<R0T3:>SHfNEk00m=1
+!s100 aN_b]CFNHcTi8]G]Sk8a53
+R6
+32
+R16
+!i10b 1
+R17
+R61
+R62
+!i113 1
+R11
+R12
+Aa_my_nadder
+R1
+R2
+DEx4 work 9 my_nadder 0 22 gjfo<R0T3:>SHfNEk00m=1
+l36
+L31
+VPGnzFFgL>0<lX1WXca:f^1
+!s100 _WRWa;B]lK5bIdPVF[SG91
+R6
+32
+R16
+!i10b 1
+R17
+R61
+R62
+!i113 1
+R11
+R12
+Emy_ndff
+Z63 w1605959424
+R1
+R2
+R3
+Z64 8N:/ArchProject/nDFF.vhdl
+Z65 FN:/ArchProject/nDFF.vhdl
+l0
+L3
+VSGHz:5_^o]2E;BP;K>]213
+!s100 FXMLeg7NI7c7i]PM?Z4hJ1
+R6
+32
+R47
+!i10b 1
+R29
+Z66 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|N:/ArchProject/nDFF.vhdl|
+Z67 !s107 N:/ArchProject/nDFF.vhdl|
+!i113 1
+R11
+R12
+Aa_my_ndff
+R1
+R2
+DEx4 work 7 my_ndff 0 22 SGHz:5_^o]2E;BP;K>]213
+l11
+L10
+VR5=P@a>JcDZaOKU_=La1a3
+!s100 FlTmR77ma1DbMX4oTk6bW1
+R6
+32
+R47
+!i10b 1
+R29
+R66
+R67
+!i113 1
+R11
+R12
+Etri_state_buffer
+Z68 w1605959376
+R1
+R2
+R3
+Z69 8N:/ArchProject/triStateBuffer.vhdl
+Z70 FN:/ArchProject/triStateBuffer.vhdl
+l0
+L4
+V=N^OgR<RR]82l>oo>lHUA0
+!s100 al2g]nC^C^GN=<zd8@@GW1
+R6
+32
+R47
+!i10b 1
+R29
+Z71 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|N:/ArchProject/triStateBuffer.vhdl|
+Z72 !s107 N:/ArchProject/triStateBuffer.vhdl|
+!i113 1
+R11
+R12
+Amy_tri_state_buffer
+R1
+R2
+DEx4 work 16 tri_state_buffer 0 22 =N^OgR<RR]82l>oo>lHUA0
+l13
+L12
+VoA:Qo9KO`EmT>ZUFOg>=U3
+!s100 z;a^gmh@G?PO7jgTejN::0
+R6
+32
+R47
+!i10b 1
+R29
+R71
+R72
+!i113 1
+R11
+R12
