@@ -1,5 +1,6 @@
 LIBRARY IEEE;
 USE IEEE.std_logic_1164.all;
+use IEEE.STD_LOGIC_UNSIGNED.ALL;
 
 entity amux is 
 	port( cin : in std_logic;
@@ -38,13 +39,12 @@ BEGIN
          else b(15 downto 0);
 
          d_mux1: my_nadder port map(atemp,btemp,cin,dtemp,cout_temp);
-
          ftemp<="0000000000000000" when sel(1 downto 0)&cin="111"
          else btemp when CmpEnable='1'
          else dtemp;
 
-         f(15 downto 0)<=ftemp;
-
+         f(15 downto 0)<=a-b;
+         
 	 cout<='0' when sel(1 downto 0)&cin="111"
          else cout_temp;    
          zero_flag<='1' when ftemp="0000000000000000"

@@ -22,21 +22,21 @@ Architecture f_mux OF finalmux IS
 
         COMPONENT cmux IS
                   PORT( a : in std_logic_vector (15 downto 0); cin: in std_logic; 
-                        cout: out std_logic;  f : OUT std_logic_vector (15 downto 0);
+                        cout: inout std_logic;  f : OUT std_logic_vector (15 downto 0);
 			sel : IN std_logic_vector (1 downto 0);
 			FlagRegister : out std_logic_vector (15 downto 0));
         END COMPONENT;
 
 	COMPONENT dmux IS
                   PORT( a : in std_logic_vector (15 downto 0); cin: in std_logic; 
-			cout: out std_logic;  f : OUT std_logic_vector (15 downto 0);
+			cout: inout std_logic;  f : OUT std_logic_vector (15 downto 0);
 			sel : IN std_logic_vector (1 downto 0);
 			FlagRegister : out std_logic_vector (15 downto 0));
          END COMPONENT;
 
          COMPONENT amux IS
                   PORT( a,b : in std_logic_vector (15 downto 0); cin: in std_logic; 
-                        cout: out std_logic;  f : OUT std_logic_vector (15 downto 0);
+                        cout: inout std_logic;  f : OUT std_logic_vector (15 downto 0);
 			sel : IN std_logic_vector (1 downto 0);
 			CmpEnable : in std_logic;
 			FlagRegister : out std_logic_vector (15 downto 0));
