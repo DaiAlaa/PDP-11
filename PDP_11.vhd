@@ -36,6 +36,16 @@ Architecture my_PDP_11 OF PDP_11 IS
               f : out std_logic_vector (n-1 downto 0));
 
          END COMPONENT;
+
+         COMPONENT ram IS
+         GENERIC ( n : integer := 16);
+	 PORT(
+		clk : IN std_logic;
+		we  : IN std_logic;
+		address : IN  std_logic_vector(n-1 DOWNTO 0);
+		datain  : IN  std_logic_vector(n-1 DOWNTO 0);
+		dataout : OUT std_logic_vector(n-1 DOWNTO 0));
+         END  COMPONENT;
 	 
 	 signal F1_enable: std_logic; 
 	 signal F2_enable: std_logic;
@@ -69,6 +79,13 @@ Architecture my_PDP_11 OF PDP_11 IS
          signal select_enable_in : std_logic;
          signal select_src_dst_in : std_logic_vector (2 downto 0);
          signal select_register_in : std_logic_vector (7 downto 0);
+
+         signal MDRsignal : std_logic_vector (15 downto 0);
+         signal MDRenable : std_logic;
+
+         signal Ram_out : std_logic_vector (15 downto 0);
+         signal Ram_enable : std_logic;
+         signal Ram_clk : std_logic;
          
 Begin
          F1_enable <= '0' WHEN control_word(23 downto 21) ="000"
@@ -91,7 +108,16 @@ Begin
                       ELSE '0';
          select_enable_in <= '1' WHEN control_word(18 downto 17) ="10" or control_word(18 downto 17) ="11"
                       ELSE '0';
+         
+         MDRsignal <= Ram_out WHEN control_word(7 downto 6) = "01"
+                      ELSE outbus ;
 
+         MDRenable <= '1' WHEN control_word(7 downto 6) = "01"
+                      ELSE F4_output(2) ;
+
+         Ram_clk <= not Clk;
+         Ram_enable <= '1' WHEN control_word(7 downto 6) = "01" or control_word(7 downto 6) = "10"
+                     ELSE '0';
          ----------------------------------------------------------------------------------
 	 F1: decoder GENERIC MAP(3) port map(F1_enable,control_word(23 downto 21),F1_output); 
 	 F2: decoder GENERIC MAP(2) port map(F2_enable,control_word(20 downto 19),F2_output); 
@@ -115,7 +141,7 @@ Begin
          Z_reg: my_nDFF GENERIC MAP(16) port map(F3_output(1),Clk,Rst,outbus,Z);
          ---------- F4 ----------
          MAR_reg: my_nDFF GENERIC MAP(16) port map(F4_output(1),Clk,Rst,outbus,MAR);
-	 MDR_reg: my_nDFF GENERIC MAP(16) port map(F4_output(2),Clk,Rst,outbus,MDR);
+	
 	 temp_reg: my_nDFF GENERIC MAP(16) port map(F4_output(3),Clk,Rst,outbus,temp);
          ----------- F5 ----------
 	 Y_reg: my_nDFF GENERIC MAP(16) port map(control_word(14),Clk,Rst,outbus,Y);
@@ -137,6 +163,10 @@ Begin
          ----------- F6 ----------
          tri_Y: tri_state_buffer port map(control_word(13),Y,outbus);
 
+         my_ram: ram PORT MAP(Ram_clk,Ram_enable,MAR,MDR,Ram_out);
+         MDR_reg: my_nDFF GENERIC MAP(16) port map(MDRenable,Clk,Rst,MDRsignal,MDR);
+
+         
 	 --tri_IR: tri_state_buffer port map(fsource(3),r33,temp);
 	  
 	
