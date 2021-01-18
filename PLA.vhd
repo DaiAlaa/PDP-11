@@ -4,7 +4,7 @@ USE IEEE.numeric_std.all;
 use IEEE.std_logic_unsigned.all;
 
 entity PLA is 
-	port( IR : in std_logic_vector (15 downto 0) ;BitOring : IN std_logic_vector (2 downto 0); En,clk : in std_logic ; uPCOUT : OUT std_logic_vector (8 DOWNTO 0) );
+	port( IR,Flag : in std_logic_vector (15 downto 0) ;BitOring : IN std_logic_vector (2 downto 0); En,clk : in std_logic ; uPCOUT : OUT std_logic_vector (8 DOWNTO 0) );
 end entity;
 
 Architecture pla OF PLA IS 
@@ -15,17 +15,44 @@ BEGIN
      PROCESS(En,clk) IS  
         BEGIN
             IF En= '1' THEN
-                IF ((IR(15 DownTo 12) = "1000" OR (not IR(15)) ='1') AND BitOring(2 DownTo 0) = "000") THEN        --Two Operand -> Fetch Source
+                IF BitOring( 2 downto 0) = "101" THEN
+                        Temp <= "000000000"; 
+                        uPC <=Temp;
+                ELSIF ((IR(15 DownTo 12) = "1000" OR (not IR(15)) ='1') AND BitOring(2 DownTo 0) = "000") THEN        --Two Operand -> Fetch Source
                     Temp <=  "001000001";
-                    Temp(5 DownTo 3) <= ((Temp(5 DOWNTO 3)) OR (IR(8 DownTo 6)));
+                    Temp(5 DownTo 3) <= ((Temp(5 DOWNTO 3)) OR (IR(11 DOWNTO 9)));
                     uPc <= Temp;    
                 ElSIF ((IR(15)='1' AND (not IR(14)) ='1') OR BitOring(2 DownTo 0) = "001" ) THEN        --One Operand -> Fetch Destination
                     Temp <=  "010000001";
-                    Temp(5 DownTo 3) <= ((Temp(5 DOWNTO 3)) OR (IR(2 DownTo 0)));
+                    Temp(5 DownTo 3) <= ((Temp(5 DOWNTO 3)) OR (IR(5 DownTo 3)));
                     uPc <= Temp;
                 ElSIF (IR(15)='1' AND IR(14) ='1' And (not IR(13)) ='1') THEN        --Branching -> Fetch Offset
-                    Temp <=  "000100000";
-                    uPc <= Temp;  
+                    IF IR(15 DOWNTO 10) = "110000"   THEN                                      --BR            
+                        Temp <=  "000100000";
+                        uPc <= Temp;                                      
+                    ELSIF IR(15 DOWNTO 10) = "110001" AND Flag(1) ='1' THEN                    --BEQ
+                        Temp <=  "000100000";
+                        uPc <= Temp;  
+                    ELSIF IR(15 DOWNTO 10) = "110010" AND Flag(1) ='0'  THEN                   --BNE
+                        Temp <=  "000100000";
+                        uPc <= Temp;  
+                    ELSIF IR(15 DOWNTO 10) = "110011" AND Flag(0) ='0'  THEN                   --BLO
+                        Temp <=  "000100000";
+                        uPc <= Temp;  
+                    ELSIF IR(15 DOWNTO 10) = "110100" AND (Flag(0) ='0' OR Flag(1)='1') THEN   --BLS
+                        Temp <=  "000100000";
+                        uPc <= Temp;  
+                    ELSIF IR(15 DOWNTO 10) = "110001" AND Flag(0) ='1'   THEN                  --BHI
+                        Temp <=  "000100000";
+                        uPc <= Temp;  
+                    ELSIF IR(15 DOWNTO 10) = "110001" AND (Flag(0) ='1' OR Flag(1)='1')  THEN  --BHS
+                        Temp <=  "000100000";
+                        uPc <= Temp;  
+                    ELSE 
+                        Temp <= "000000000"; 
+                        uPC <=Temp;      
+                    END IF;
+
                 ElSIF (IR(15 DownTo 10) ="111000") THEN        --HLT
                     Temp <=  "000100101";
                     uPc <= Temp; 
@@ -45,7 +72,7 @@ BEGIN
                     Temp <=  "000110001";
                     uPc <= Temp;  
                 ElSIF (BitOring(2 DownTo 0) ="010") THEN        --Or Indirect Source
-                    IF IR(8 DownTo 6) ="000" THEN
+                    IF IR(11 DOWNTO 9) ="000" THEN
                         Temp <=  "010000000";
                         uPc <= Temp; 
                     ElSIF IR(8) ='1' THEN
@@ -56,7 +83,7 @@ BEGIN
                         uPc <= Temp;   
                     END IF;  
                 ElSIF (BitOring(2 DownTo 0) ="011") THEN        --Or Indirect Destination
-                    IF IR(8 DownTo 6) ="000" THEN
+                    IF IR(5 DOWNTO 3) ="000" THEN
                         Temp <=  "100110111";
                         uPc <= Temp; 
                     ElSIF IR(2) ='1' THEN
@@ -145,16 +172,14 @@ BEGIN
                         END IF;
                     END IF;   
                 ELSIF BitOring(2 DownTo 0) = "100" THEN
-                    IF IR (2 DownTo 0) ="000" THEN
+                    IF IR (5 DownTo 3) ="000" THEN
                         Temp <=  "101100101";
                         uPc <= Temp;  
                     ELSE
                         Temp <=  "101100111";
                         uPc <= Temp;   
                     END IF;  
-                ELSIF BitOring( 2 downto 0) = "101" THEN
-                        Temp <= "000000000"; 
-                        uPC <=Temp;
+                
                 END IF; 
             ELSIF falling_edge(clk) THEN
                 Temp <= "000000000";      

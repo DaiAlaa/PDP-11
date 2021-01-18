@@ -6,8 +6,6 @@ GENERIC ( n : integer := 16);
 	port( 
 	      Clk : IN std_logic;
               Rst : IN std_logic; 
-              Rsrc : IN std_logic_vector (2 downto 0);
-              Rdst : IN std_logic_vector (2 downto 0);
               outbus : inout std_logic_vector (n-1 downto 0));
 end entity;
 
@@ -58,7 +56,7 @@ Architecture my_PDP_11 OF PDP_11 IS
 
          COMPONENT PLA IS
 	 PORT( 
-                IR : in std_logic_vector (15 downto 0) ;
+                IR,flag : in std_logic_vector (15 downto 0) ;
                 BitOring : IN std_logic_vector (2 downto 0); 
                 En,clk : in std_logic ;
                 uPCOUT : OUT std_logic_vector (8 DOWNTO 0));
@@ -108,7 +106,7 @@ Architecture my_PDP_11 OF PDP_11 IS
          signal R4: std_logic_vector (15 downto 0);
          signal R5: std_logic_vector (15 downto 0);
          signal R6: std_logic_vector (15 downto 0);
-         signal R7: std_logic_vector (15 downto 0);
+         signal R7: std_logic_vector (15 downto 0) := "0000000000000000" ;
          signal MAR: std_logic_vector (15 downto 0);
 	 signal MDR: std_logic_vector (15 downto 0);
 	 signal Z: std_logic_vector (15 downto 0);
@@ -137,6 +135,8 @@ Architecture my_PDP_11 OF PDP_11 IS
          signal Cin: std_logic;
          signal CMP: std_logic;
          signal S: std_logic_vector (3 downto 0);
+
+         signal Rsrc,Rdst : std_logic_vector (2 downto 0);
          
 Begin
          F1_enable <= '0' WHEN control_word(23 downto 21) ="000"
@@ -221,12 +221,17 @@ Begin
          my_rom: rom PORT MAP(Ram_clk,'0',uPC,(OTHERS=>'0'),control_word);              -- write enable always 0
          MDR_reg: my_nDFF GENERIC MAP(16) port map(MDRenable,Clk,Rst,MDRsignal,MDR);
 
-         my_PLA: PLA PORT MAP(IR,control_word(3 downto 1),control_word(0),Clk,uPC); 
-         Branching: Branch PORT MAP(IR,flag,R7,R7);                                   --- >>>
+         my_PLA: PLA PORT MAP(IR,flag,control_word(3 downto 1),control_word(0),Clk,uPC); 
+         --Branching: Branch PORT MAP(IR,flag,R7,R7);
          MappingALU: MapALU PORT MAP(control_word(12 downto 8),Cin,CMP,S(3 downto 0));  
          ALU_comp: finalmux PORT MAP(Cin,CMP,Y,outbus,S(3 downto 0),Z,flag,flag(0));  
 
-         
+         Y(9 DOWNTO 0) <= IR(9 DOWNTO 0) when uPC ="000100000" ;
+         Y(15 DOWNTO 10) <= "000000" when uPC ="000100000" ;
+         Rsrc <= IR(8 DownTo 6);
+         Rdst <= IR(2 DownTo 0);
+
+
 	 --tri_IR: tri_state_buffer port map(fsource(3),r33,temp);
 	  
 	
