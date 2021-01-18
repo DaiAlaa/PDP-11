@@ -10,7 +10,6 @@ GENERIC ( n : integer := 16);
               Rsrc : IN std_logic_vector (2 downto 0);
               Rdst : IN std_logic_vector (2 downto 0);
               outbus : inout std_logic_vector (n-1 downto 0));
-
 end entity;
 
 Architecture my_PDP_11 OF PDP_11 IS
@@ -36,7 +35,8 @@ Architecture my_PDP_11 OF PDP_11 IS
               f : out std_logic_vector (n-1 downto 0));
 
          END COMPONENT;
-
+
+
          COMPONENT ram IS
          GENERIC ( n : integer := 16);
 	 PORT(
@@ -46,6 +46,39 @@ Architecture my_PDP_11 OF PDP_11 IS
 		datain  : IN  std_logic_vector(n-1 DOWNTO 0);
 		dataout : OUT std_logic_vector(n-1 DOWNTO 0));
          END  COMPONENT;
+
+         COMPONENT rom IS
+         GENERIC ( n : integer := 24);
+	 PORT(
+		clk : IN std_logic;
+		we  : IN std_logic;
+		address : IN  std_logic_vector(n-1 DOWNTO 0);
+		datain  : IN  std_logic_vector(n-1 DOWNTO 0);
+		dataout : OUT std_logic_vector(n-1 DOWNTO 0));
+         END  COMPONENT;
+
+         COMPONENT PLA IS
+	 PORT( 
+                IR : in std_logic_vector (15 downto 0) ;
+                BitOring : IN std_logic_vector (2 downto 0); 
+                En,clk : in std_logic ;
+                uPCOUT : OUT std_logic_vector (8 DOWNTO 0));
+         END  COMPONENT;    
+
+         COMPONENT Branch IS
+	 PORT ( 
+                IR,Flag,PCin : In std_logic_vector (15 DOWNTO 0);
+                PCOut : OUT std_logic_vector (15 DOWNTO 0));
+         END  COMPONENT;    
+
+        COMPONENT Branch IS
+	 PORT ( 
+                F: In std_logic_vector (4 DOWNTO 0);
+                Carry,CMP : OUT std_logic ; 
+                S : OUT std_logic_vector (3 DOWNTO 0));
+         END  COMPONENT;   
+
+         
 	 
 	 signal F1_enable: std_logic; 
 	 signal F2_enable: std_logic;
@@ -163,7 +196,8 @@ Begin
          ----------- F6 ----------
          tri_Y: tri_state_buffer port map(control_word(13),Y,outbus);
 
-         my_ram: ram PORT MAP(Ram_clk,Ram_enable,MAR,MDR,Ram_out);
+         my_ram: ram PORT MAP(Ram_clk,Ram_enable,MAR,MDR,Ram_out);              --Address Size
+         my_rom: rom PORT MAP(Ram_clk,Ram_enable,MAR,MDR,Ram_out);              --TODDO
          MDR_reg: my_nDFF GENERIC MAP(16) port map(MDRenable,Clk,Rst,MDRsignal,MDR);
 
          
