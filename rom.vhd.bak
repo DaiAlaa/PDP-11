@@ -7,9 +7,9 @@ GENERIC ( n : integer := 24);
 	PORT(
 		clk : IN std_logic;
 		we  : IN std_logic;
-		address : IN  std_logic_vector(8 DOWNTO 0);	--TODO Change 15 TO 23
-		datain  : IN  std_logic_vector(n-1 DOWNTO 0);
-		dataout : OUT std_logic_vector(n-1 DOWNTO 0));
+		address : IN  std_logic_vector(15 DOWNTO 0);	--TODO Change 15 TO 23
+		datain  : IN  std_logic_vector(15 DOWNTO 0);
+		dataout : OUT std_logic_vector(15 DOWNTO 0));
 END ENTITY rom;
 
 ARCHITECTURE syncroma OF rom IS

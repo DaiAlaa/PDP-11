@@ -6,7 +6,6 @@ GENERIC ( n : integer := 16);
 	port( 
 	      Clk : IN std_logic;
               Rst : IN std_logic; 
-	      control_word : IN std_logic_vector (23 downto 0);
               Rsrc : IN std_logic_vector (2 downto 0);
               Rdst : IN std_logic_vector (2 downto 0);
               outbus : inout std_logic_vector (n-1 downto 0));
@@ -52,7 +51,7 @@ Architecture my_PDP_11 OF PDP_11 IS
 	 PORT(
 		clk : IN std_logic;
 		we  : IN std_logic;
-		address : IN  std_logic_vector(n-1 DOWNTO 0);
+		address : IN  std_logic_vector(8 DOWNTO 0);
 		datain  : IN  std_logic_vector(n-1 DOWNTO 0);
 		dataout : OUT std_logic_vector(n-1 DOWNTO 0));
          END  COMPONENT;
@@ -71,11 +70,23 @@ Architecture my_PDP_11 OF PDP_11 IS
                 PCOut : OUT std_logic_vector (15 DOWNTO 0));
          END  COMPONENT;    
 
-        COMPONENT Branch IS
+        COMPONENT MapALU IS
 	 PORT ( 
                 F: In std_logic_vector (4 DOWNTO 0);
                 Carry,CMP : OUT std_logic ; 
                 S : OUT std_logic_vector (3 DOWNTO 0));
+         END  COMPONENT;   
+
+         COMPONENT finalmux is 
+	 port( 
+              Cin : in std_logic;
+              CmpEnable : in std_logic;
+              A : in std_logic_vector (15 downto 0);
+              B : in std_logic_vector (15 downto 0);
+              S : in std_logic_vector (3 downto 0);
+              F : out std_logic_vector (15 downto 0);
+              FlagRegister : out std_logic_vector (15 downto 0);
+              Cout : inout std_logic); 
          END  COMPONENT;   
 
          
@@ -119,6 +130,13 @@ Architecture my_PDP_11 OF PDP_11 IS
          signal Ram_out : std_logic_vector (15 downto 0);
          signal Ram_enable : std_logic;
          signal Ram_clk : std_logic;
+
+         signal uPC : std_logic_vector (8 downto 0);
+         signal control_word : std_logic_vector (23 downto 0);
+
+         signal Cin: std_logic;
+         signal CMP: std_logic;
+         signal S: std_logic_vector (3 downto 0);
          
 Begin
          F1_enable <= '0' WHEN control_word(23 downto 21) ="000"
@@ -149,6 +167,9 @@ Begin
                       ELSE F4_output(2) ;
 
          Ram_clk <= not Clk;
+         Ram_enable <= '1' WHEN control_word(7 downto 6) = "01" or control_word(7 downto 6) = "10"
+                     ELSE '0';
+
          Ram_enable <= '1' WHEN control_word(7 downto 6) = "01" or control_word(7 downto 6) = "10"
                      ELSE '0';
          ----------------------------------------------------------------------------------
@@ -197,8 +218,13 @@ Begin
          tri_Y: tri_state_buffer port map(control_word(13),Y,outbus);
 
          my_ram: ram PORT MAP(Ram_clk,Ram_enable,MAR,MDR,Ram_out);              --Address Size
-         my_rom: rom PORT MAP(Ram_clk,Ram_enable,MAR,MDR,Ram_out);              --TODDO
+         my_rom: rom PORT MAP(Ram_clk,'0',uPC,(OTHERS=>'0'),control_word);              -- write enable always 0
          MDR_reg: my_nDFF GENERIC MAP(16) port map(MDRenable,Clk,Rst,MDRsignal,MDR);
+
+         my_PLA: PLA PORT MAP(IR,control_word(3 downto 1),control_word(0),Clk,uPC); 
+         Branching: Branch PORT MAP(IR,flag,R7,R7);                                   --- >>>
+         MappingALU: MapALU PORT MAP(control_word(12 downto 8),Cin,CMP,S(3 downto 0));  
+         ALU_comp: finalmux PORT MAP(Cin,CMP,Y,outbus,S(3 downto 0),Z,flag,flag(0));  
 
          
 	 --tri_IR: tri_state_buffer port map(fsource(3),r33,temp);

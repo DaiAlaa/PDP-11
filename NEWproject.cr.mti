@@ -1,0 +1,145 @@
+{E:/third year/semester 1/Arch/arch project/project/MapALU.vhd} {1 {vcom -work work -2002 -explicit -stats=none {E:/third year/semester 1/Arch/arch project/project/MapALU.vhd}
+Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  5 2016
+-- Loading package STANDARD
+-- Loading package TEXTIO
+-- Loading package std_logic_1164
+-- Loading package NUMERIC_STD
+-- Loading package std_logic_arith
+-- Loading package STD_LOGIC_UNSIGNED
+-- Compiling entity MapALU
+-- Compiling architecture mapALU of MapALU
+
+} {} {}} {E:/third year/semester 1/Arch/arch project/project/ram.vhd} {1 {vcom -work work -2002 -explicit -stats=none {E:/third year/semester 1/Arch/arch project/project/ram.vhd}
+Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  5 2016
+-- Loading package STANDARD
+-- Loading package TEXTIO
+-- Loading package std_logic_1164
+-- Loading package NUMERIC_STD
+-- Compiling entity ram
+-- Compiling architecture syncrama of ram
+
+} {} {}} {E:/third year/semester 1/Arch/arch project/project/decoder.vhdl} {1 {vcom -work work -2002 -explicit -stats=none {E:/third year/semester 1/Arch/arch project/project/decoder.vhdl}
+Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  5 2016
+-- Loading package STANDARD
+-- Loading package TEXTIO
+-- Loading package std_logic_1164
+-- Loading package NUMERIC_STD
+-- Compiling entity decoder
+-- Compiling architecture my_decoder of decoder
+
+} {} {}} {E:/third year/semester 1/Arch/arch project/project/Branching.vhd} {1 {vcom -work work -2002 -explicit -stats=none {E:/third year/semester 1/Arch/arch project/project/Branching.vhd}
+Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  5 2016
+-- Loading package STANDARD
+-- Loading package TEXTIO
+-- Loading package std_logic_1164
+-- Loading package NUMERIC_STD
+-- Loading package std_logic_arith
+-- Loading package STD_LOGIC_UNSIGNED
+-- Compiling entity Branch
+-- Compiling architecture F of Branch
+
+} {} {}} {E:/third year/semester 1/Arch/arch project/project/PDP_11.vhd} {1 {vcom -work work -2002 -explicit -stats=none {E:/third year/semester 1/Arch/arch project/project/PDP_11.vhd}
+Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  5 2016
+-- Loading package STANDARD
+-- Loading package TEXTIO
+-- Loading package std_logic_1164
+-- Compiling entity PDP_11
+-- Compiling architecture my_PDP_11 of PDP_11
+
+} {} {}} {E:/third year/semester 1/Arch/arch project/project/lab3.vhdl} {1 {vcom -work work -2002 -explicit -stats=none {E:/third year/semester 1/Arch/arch project/project/lab3.vhdl}
+Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  5 2016
+-- Loading package STANDARD
+-- Loading package TEXTIO
+-- Loading package std_logic_1164
+-- Compiling entity lab3
+-- Compiling architecture my_lab3 of lab3
+
+} {} {}} {E:/third year/semester 1/Arch/arch project/project/partA.vhd} {1 {vcom -work work -2002 -explicit -stats=none {E:/third year/semester 1/Arch/arch project/project/partA.vhd}
+Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  5 2016
+-- Loading package STANDARD
+-- Loading package TEXTIO
+-- Loading package std_logic_1164
+-- Loading package std_logic_arith
+-- Loading package STD_LOGIC_UNSIGNED
+-- Compiling entity amux
+-- Compiling architecture a_mux of amux
+
+} {} {}} {E:/third year/semester 1/Arch/arch project/project/register.vhdl} {1 {vcom -work work -2002 -explicit -stats=none {E:/third year/semester 1/Arch/arch project/project/register.vhdl}
+Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  5 2016
+-- Loading package STANDARD
+-- Loading package TEXTIO
+-- Loading package std_logic_1164
+-- Compiling entity my_nDFF
+-- Compiling architecture a_my_nDFF of my_nDFF
+
+} {} {}} {E:/third year/semester 1/Arch/arch project/project/partB.vhd} {1 {vcom -work work -2002 -explicit -stats=none {E:/third year/semester 1/Arch/arch project/project/partB.vhd}
+Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  5 2016
+-- Loading package STANDARD
+-- Loading package TEXTIO
+-- Loading package std_logic_1164
+-- Compiling entity bmux
+-- Compiling architecture b_mux of bmux
+
+} {} {}} {E:/third year/semester 1/Arch/arch project/project/partC.vhd} {1 {vcom -work work -2002 -explicit -stats=none {E:/third year/semester 1/Arch/arch project/project/partC.vhd}
+Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  5 2016
+-- Loading package STANDARD
+-- Loading package TEXTIO
+-- Loading package std_logic_1164
+-- Compiling entity cmux
+-- Compiling architecture c_mux of cmux
+
+} {} {}} {E:/third year/semester 1/Arch/arch project/project/ALU.vhd} {1 {vcom -work work -2002 -explicit -stats=none {E:/third year/semester 1/Arch/arch project/project/ALU.vhd}
+Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  5 2016
+-- Loading package STANDARD
+-- Loading package TEXTIO
+-- Loading package std_logic_1164
+-- Compiling entity finalmux
+-- Compiling architecture f_mux of finalmux
+
+} {} {}} {E:/third year/semester 1/Arch/arch project/project/partD.vhd} {1 {vcom -work work -2002 -explicit -stats=none {E:/third year/semester 1/Arch/arch project/project/partD.vhd}
+Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  5 2016
+-- Loading package STANDARD
+-- Loading package TEXTIO
+-- Loading package std_logic_1164
+-- Compiling entity dmux
+-- Compiling architecture d_mux of dmux
+
+} {} {}} {E:/third year/semester 1/Arch/arch project/project/rom.vhd} {1 {vcom -work work -2002 -explicit -stats=none {E:/third year/semester 1/Arch/arch project/project/rom.vhd}
+Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  5 2016
+-- Loading package STANDARD
+-- Loading package TEXTIO
+-- Loading package std_logic_1164
+-- Loading package NUMERIC_STD
+-- Compiling entity rom
+-- Compiling architecture syncroma of rom
+
+} {} {}} {E:/third year/semester 1/Arch/arch project/project/triStateBuffer.vhdl} {1 {vcom -work work -2002 -explicit -stats=none {E:/third year/semester 1/Arch/arch project/project/triStateBuffer.vhdl}
+Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  5 2016
+-- Loading package STANDARD
+-- Loading package TEXTIO
+-- Loading package std_logic_1164
+-- Compiling entity tri_state_buffer
+-- Compiling architecture my_tri_state_buffer of tri_state_buffer
+
+} {} {}} {E:/third year/semester 1/Arch/arch project/project/nadder.vhd} {1 {vcom -work work -2002 -explicit -stats=none {E:/third year/semester 1/Arch/arch project/project/nadder.vhd}
+Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  5 2016
+-- Loading package STANDARD
+-- Loading package TEXTIO
+-- Loading package std_logic_1164
+-- Compiling entity my_adder
+-- Compiling architecture a_my_adder of my_adder
+-- Compiling entity my_nadder
+-- Compiling architecture a_my_nadder of my_nadder
+
+} {} {}} {E:/third year/semester 1/Arch/arch project/project/lab4.vhdl} {1 {vcom -work work -2002 -explicit -stats=none {E:/third year/semester 1/Arch/arch project/project/lab4.vhdl}
+Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  5 2016
+-- Loading package STANDARD
+-- Loading package TEXTIO
+-- Loading package std_logic_1164
+-- Loading package std_logic_arith
+-- Loading package STD_LOGIC_UNSIGNED
+-- Loading package NUMERIC_STD
+-- Compiling entity lab4
+-- Compiling architecture my_lab4 of lab4
+
+} {} {}}

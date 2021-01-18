@@ -16,6 +16,7 @@ ARCHITECTURE syncrama OF ram IS
 
 	TYPE ram_type IS ARRAY(0 TO 2047) OF std_logic_vector(n-1 DOWNTO 0);
 	SIGNAL ram : ram_type := (
+                0 => "0000000000001000",
 		OTHERS => X"0000"
 		) ;
 	

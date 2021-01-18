@@ -59,7 +59,7 @@ BEGIN
     ELSE '0' when F = "10011"
     ELSE '1' when F = "10100"                                 
     ELSE '1' when F = "10101"  
-    ELSE '1' when F = "10110" ;
+    ELSE '0' when F = "10110" ;
 
                                    
 END mapALU;

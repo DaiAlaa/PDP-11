@@ -18,8 +18,8 @@ BEGIN
                 IF ((IR(15 DownTo 12) = "1000" OR (not IR(15)) ='1') AND BitOring(2 DownTo 0) = "000") THEN        --Two Operand -> Fetch Source
                     Temp <=  "001000001";
                     Temp(5 DownTo 3) <= ((Temp(5 DOWNTO 3)) OR (IR(8 DownTo 6)));
-                    uPc <= Temp;    
-                ElSIF ((IR(15)='1' AND (not IR(14)) ='1') OR BitOring(2 DownTo 0) = "001" ) THEN        --One Operand -> Fetch Destination
+                    uPc <= Temp;  
+                ELSIF ((IR(15)='1' AND (not IR(14)) ='1') OR BitOring(2 DownTo 0) = "001" ) THEN        --One Operand -> Fetch Destination
                     Temp <=  "010000001";
                     Temp(5 DownTo 3) <= ((Temp(5 DOWNTO 3)) OR (IR(2 DownTo 0)));
                     uPc <= Temp;
@@ -46,7 +46,7 @@ BEGIN
                     uPc <= Temp;  
                 ElSIF (BitOring(2 DownTo 0) ="010") THEN        --Or Indirect Source
                     IF IR(8 DownTo 6) ="000" THEN
-                        Temp <=  "001111010";
+                        Temp <=  "010000001";
                         uPc <= Temp; 
                     ElSIF IR(8) ='1' THEN
                         Temp <=  "001111000";
@@ -57,7 +57,7 @@ BEGIN
                     END IF;  
                 ElSIF (BitOring(2 DownTo 0) ="011") THEN        --Or Indirect Destination
                     IF IR(8 DownTo 6) ="000" THEN
-                        Temp <=  "010111010";
+                        Temp <=  "100111000";
                         uPc <= Temp; 
                     ElSIF IR(2) ='1' THEN
                         Temp <=  "010111000";
@@ -66,7 +66,7 @@ BEGIN
                         Temp <=  "010111001";
                         uPc <= Temp;   
                     END IF; 
-                ElSIF (BitOring(2 DownTo 0) ="100") AND (uPC ="010111010") THEN        --Or Result -> Fetch instruction
+                ElSIF (BitOring(2 DownTo 0) ="100") AND ((uPC ="100111000") or (uPC ="010111010"))THEN        --Or Result -> Fetch instruction
                     IF (IR(15 DownTo 12) = "1000" OR (not IR(15)) ='1') THEN           --Two Operands
                         IF IR(15 DownTo 12) = "0000" THEN      --MOV    
                             Temp <=  "100111000";
