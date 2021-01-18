@@ -53,19 +53,20 @@ Architecture f_mux OF finalmux IS
          SIGNAL dflag : std_logic_vector(15 DOWNTO 0);
 
          SIGNAL ccout : std_logic;
-         SIGNAL dcout: std_logic;
-         SIGNAL acout: std_logic;
+         SIGNAL dcout : std_logic;
+         SIGNAL acout : std_logic;
 BEGIN
          b_mux1: bmux port map(a,b,s(1 downto 0),btemp,bflag);
          c_mux1: cmux port map(a,cin,ccout,ctemp,s(1 downto 0),cflag);
          d_mux1: dmux port map(a,cin,dcout,dtemp,s(1 downto 0),dflag);
-	 a_mux1: amux port map(a,b,cin,acout,atemp,s(1 downto 0),CmpEnable,aflag);
+   	   a_mux1: amux port map(a,b,cin,acout,atemp,s(1 downto 0),CmpEnable,aflag);
 
 
 	 FlagRegister<=bflag when s(3 downto 2)="01"
-         else cflag when s(3 downto 2)="10"
-	 else dflag when s(3 downto 2)="11"
-         else aflag;
+                           else cflag when s(3 downto 2)="10"
+	                     else dflag when s(3 downto 2)="11"
+                           else aflag;
+
          f<=btemp when s(3 downto 2)="01"
          else ctemp when s(3 downto 2)="10"
 	 else dtemp when s(3 downto 2)="11"
