@@ -9,7 +9,7 @@ entity finalmux is
               S : in std_logic_vector (3 downto 0);
               F : out std_logic_vector (15 downto 0);
               FlagRegister : out std_logic_vector (15 downto 0);
-              Cout : inout std_logic;                            
+              Cout : inout std_logic                            
               CarryInput: in std_logic);
 end entity;
 

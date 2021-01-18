@@ -40,7 +40,7 @@ BEGIN
 
          d_mux1: my_nadder port map(atemp,btemp,cin,dtemp,cout_temp);
          ftemp<="0000000000000000" when sel(1 downto 0)&cin="111"
-         else btemp when CmpEnable='1'
+         else a when CmpEnable='1'
          else dtemp;
 
          f(15 downto 0)<=ftemp;
@@ -49,8 +49,7 @@ BEGIN
          else cout_temp;    
          zero_flag<='1' when ftemp="0000000000000000"
          else '0';
-         negative_flag<='1' when sel(1 downto 0)&cout="100"
-         else '1' when sel(1 downto 0)&cin &cout="1100"
+         negative_flag<='1' when sel(1 downto 0)&cout="100" or sel(1 downto 0)&cin&cout="1100"
          else '0';
          FlagRegister(15 downto 0)<="0000000000000"&negative_flag&zero_flag&cout;
 end Architecture;

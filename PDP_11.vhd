@@ -84,7 +84,8 @@ Architecture my_PDP_11 OF PDP_11 IS
               S : in std_logic_vector (3 downto 0);
               F : out std_logic_vector (15 downto 0);
               FlagRegister : out std_logic_vector (15 downto 0);
-              Cout : inout std_logic); 
+              Cout : inout std_logic;
+	      CarryInput: in std_logic); 
          END  COMPONENT;   
 
          
@@ -135,7 +136,10 @@ Architecture my_PDP_11 OF PDP_11 IS
          signal Cin: std_logic;
          signal CMP: std_logic;
          signal S: std_logic_vector (3 downto 0);
-
+         signal CarryOut: std_logic;
+	 signal ALUOut: std_logic_vector(15 downto 0);
+	 signal ALUIn: std_logic_vector(15 downto 0);
+	 signal CarryInput: std_logic;
          signal Rsrc,Rdst : std_logic_vector (2 downto 0);
          
 Begin
@@ -192,7 +196,7 @@ Begin
          reg4: my_nDFF GENERIC MAP(16) port map(select_register_in(4),Clk,Rst,outbus,R4);
 	 reg5: my_nDFF GENERIC MAP(16) port map(select_register_in(5),Clk,Rst,outbus,R5);
 	 reg6: my_nDFF GENERIC MAP(16) port map(select_register_in(6),Clk,Rst,outbus,R6);
-         Z_reg: my_nDFF GENERIC MAP(16) port map(F3_output(1),Clk,Rst,outbus,Z);
+         Z_reg: my_nDFF GENERIC MAP(16) port map(F3_output(1),Clk,Rst,ALUOut,Z);
          ---------- F4 ----------
          MAR_reg: my_nDFF GENERIC MAP(16) port map(F4_output(1),Clk,Rst,outbus,MAR);
 	
@@ -215,7 +219,7 @@ Begin
          tri_temp: tri_state_buffer port map(F1_output(6),temp,outbus);
 	 tri_flag: tri_state_buffer port map(F1_output(7),flag,outbus);
          ----------- F6 ----------
-         tri_Y: tri_state_buffer port map(control_word(13),Y,outbus);
+         tri_Y: tri_state_buffer port map(control_word(13),Y,ALUIn);
 
          my_ram: ram PORT MAP(Ram_clk,Ram_enable,MAR,MDR,Ram_out);              --Address Size
          my_rom: rom PORT MAP(Ram_clk,'0',uPC,(OTHERS=>'0'),control_word);              -- write enable always 0
@@ -223,8 +227,9 @@ Begin
 
          my_PLA: PLA PORT MAP(IR,flag,control_word(3 downto 1),control_word(0),Clk,uPC); 
          --Branching: Branch PORT MAP(IR,flag,R7,R7);
-         MappingALU: MapALU PORT MAP(control_word(12 downto 8),Cin,CMP,S(3 downto 0));  
-         ALU_comp: finalmux PORT MAP(Cin,CMP,Y,outbus,S(3 downto 0),Z,flag,flag(0));  
+         MappingALU: MapALU PORT MAP(control_word(12 downto 8),Cin,CMP,S(3 downto 0)); 
+         CarryInput<=flag(0); 
+         ALU_comp: finalmux PORT MAP(Cin,CMP,Y,outbus,S(3 downto 0),ALUOut,flag,CarryOut,CarryInput);  
 
          Y(9 DOWNTO 0) <= IR(9 DOWNTO 0) when uPC ="000100000" ;
          Y(15 DOWNTO 10) <= "000000" when uPC ="000100000" ;
