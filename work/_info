@@ -7,478 +7,564 @@ z2
 !i10e 25
 !i10f 100
 cModel Technology
-dC:/Modeltech_pe_edu_10.4a/examples
+dN:/ArchProject
 Eamux
-Z0 w1610889121
-Z1 DPx3 std 6 textio 0 22 zE1`LPoLg^DX3Oz^4Fj1K3
-Z2 DPx4 ieee 14 std_logic_1164 0 22 eNV`TJ_GofJTzYa?f<@Oe1
-Z3 dE:/2022/Arch/Project/Phase2/PDP-11
-Z4 8E:/2022/Arch/Project/Phase2/PDP-11/amux.vhd
-Z5 FE:/2022/Arch/Project/Phase2/PDP-11/amux.vhd
+Z0 w1610926634
+Z1 DPx4 ieee 15 std_logic_arith 0 22 [G314=:2zXJ`VORJe1J@Z1
+Z2 DPx4 ieee 18 std_logic_unsigned 0 22 ;eZjO2D4ZDz<]0>8AL<ne1
+Z3 DPx3 std 6 textio 0 22 zE1`LPoLg^DX3Oz^4Fj1K3
+Z4 DPx4 ieee 14 std_logic_1164 0 22 eNV`TJ_GofJTzYa?f<@Oe1
+Z5 dE:/third year/semester 1/Arch/arch project/VHDL
+Z6 8E:\third year\semester 1\Arch\arch project\VHDL\partA.vhd
+Z7 FE:\third year\semester 1\Arch\arch project\VHDL\partA.vhd
 l0
-L4
-V:;:Df<j_Sz47BdSKTS@4_0
-!s100 kRa^hTn]2J2NlMUJ3R<Qi0
-Z6 OV;C;10.5b;63
+L5
+VLnKGHV:Rf^DXX[j_9CQ:>2
+!s100 QJi<?<50MKfcnG[EJ[D0i3
+Z8 OV;C;10.5b;63
 32
-Z7 !s110 1610895921
+Z9 !s110 1610940239
 !i10b 1
-Z8 !s108 1610895921.000000
-Z9 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|E:/2022/Arch/Project/Phase2/PDP-11/amux.vhd|
-Z10 !s107 E:/2022/Arch/Project/Phase2/PDP-11/amux.vhd|
+Z10 !s108 1610940239.000000
+Z11 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|E:\third year\semester 1\Arch\arch project\VHDL\partA.vhd|
+Z12 !s107 E:\third year\semester 1\Arch\arch project\VHDL\partA.vhd|
 !i113 1
-Z11 o-work work -2002 -explicit
-Z12 tExplicit 1 CvgOpt 0
+Z13 o-work work -2002 -explicit
+Z14 tExplicit 1 CvgOpt 0
 Aa_mux
 R1
 R2
-DEx4 work 4 amux 0 22 :;:Df<j_Sz47BdSKTS@4_0
-l30
-L15
-V3HEi:Xe[USUlWha3<OFzS2
-!s100 KzESTbizPWUYGNPkG[0ek1
-R6
-32
-R7
-!i10b 1
+R3
+R4
+DEx4 work 4 amux 0 22 LnKGHV:Rf^DXX[j_9CQ:>2
+l31
+L16
+VHX2Fi]gNF54kVozJ9cB8S1
+!s100 Y0PKa0?=F0bUf;K0_AV9m0
 R8
+32
 R9
+!i10b 1
 R10
-!i113 1
 R11
 R12
+!i113 1
+R13
+R14
 Ebmux
-R0
-R1
-R2
+Z15 w1610046182
 R3
-Z13 8E:/2022/Arch/Project/Phase2/PDP-11/bmux.vhd
-Z14 FE:/2022/Arch/Project/Phase2/PDP-11/bmux.vhd
+R4
+R5
+Z16 8E:/third year/semester 1/Arch/arch project/VHDL/partB.vhd
+Z17 FE:/third year/semester 1/Arch/arch project/VHDL/partB.vhd
 l0
 L4
 VKa5<o>E06T8MmU=fJ5lXC0
 !s100 JmzJSA[kAUkAcUW>HI4fP0
-R6
-32
-R7
-!i10b 1
 R8
-Z15 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|E:/2022/Arch/Project/Phase2/PDP-11/bmux.vhd|
-Z16 !s107 E:/2022/Arch/Project/Phase2/PDP-11/bmux.vhd|
+32
+R9
+!i10b 1
+R10
+Z18 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|E:/third year/semester 1/Arch/arch project/VHDL/partB.vhd|
+Z19 !s107 E:/third year/semester 1/Arch/arch project/VHDL/partB.vhd|
 !i113 1
-R11
-R12
+R13
+R14
 Ab_mux
-R1
-R2
+R3
+R4
 DEx4 work 4 bmux 0 22 Ka5<o>E06T8MmU=fJ5lXC0
 l15
 L12
 VfXhUbLkKZh=]YMTnA3<=Q1
 !s100 I0dml]n;AS<R2RUmgQM5o3
-R6
-32
-R7
-!i10b 1
 R8
-R15
-R16
+32
+R9
+!i10b 1
+R10
+R18
+R19
 !i113 1
-R11
-R12
+R13
+R14
 Ecmux
-R0
-R1
-R2
+Z20 w1610046290
 R3
-Z17 8E:/2022/Arch/Project/Phase2/PDP-11/cmux.vhd
-Z18 FE:/2022/Arch/Project/Phase2/PDP-11/cmux.vhd
+R4
+R5
+Z21 8E:/third year/semester 1/Arch/arch project/VHDL/partC.vhd
+Z22 FE:/third year/semester 1/Arch/arch project/VHDL/partC.vhd
 l0
 L5
 V9lGA5GmhbCHHd7PCl=48N3
 !s100 b3W9XVfFXWm1ni:YYX36i1
-R6
-32
-R7
-!i10b 1
 R8
-Z19 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|E:/2022/Arch/Project/Phase2/PDP-11/cmux.vhd|
-Z20 !s107 E:/2022/Arch/Project/Phase2/PDP-11/cmux.vhd|
+32
+R9
+!i10b 1
+R10
+Z23 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|E:/third year/semester 1/Arch/arch project/VHDL/partC.vhd|
+Z24 !s107 E:/third year/semester 1/Arch/arch project/VHDL/partC.vhd|
 !i113 1
-R11
-R12
+R13
+R14
 Ac_mux
-R1
-R2
+R3
+R4
 DEx4 work 4 cmux 0 22 9lGA5GmhbCHHd7PCl=48N3
 l17
 L14
 Vg=daI7;?O^oLZiL][]VTb0
 !s100 H`8D8G7=Zai9Tk]P4V]@O0
-R6
-32
-R7
-!i10b 1
 R8
-R19
-R20
-!i113 1
-R11
-R12
-Edecoder
-R0
-R1
-R2
-R3
-Z21 8E:/2022/Arch/Project/Phase2/PDP-11/decoder.vhdl
-Z22 FE:/2022/Arch/Project/Phase2/PDP-11/decoder.vhdl
-l0
-L5
-VAN^lGB_CN4hnDA3NW?``02
-!s100 V]j?JDI[LeZWz>VjPCLXQ2
-R6
 32
-R7
+R9
 !i10b 1
-R8
-Z23 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|E:/2022/Arch/Project/Phase2/PDP-11/decoder.vhdl|
-Z24 !s107 E:/2022/Arch/Project/Phase2/PDP-11/decoder.vhdl|
-!i113 1
-R11
-R12
-Amy_decoder
-R1
-R2
-DEx4 work 7 decoder 0 22 AN^lGB_CN4hnDA3NW?``02
-l13
-L12
-V>:0B1@PGQY^=zP1Ab1akQ2
-!s100 `91chk?LkRE<JC`URNIz:3
-R6
-32
-R7
-!i10b 1
-R8
+R10
 R23
 R24
 !i113 1
-R11
-R12
-Edmux
-R0
-R1
-R2
+R13
+R14
+Edecoder
+Z25 w1610931175
+Z26 DPx4 ieee 11 numeric_std 0 22 :ASDNFgHXf_ih3J@9F3Ze1
 R3
-Z25 8E:/2022/Arch/Project/Phase2/PDP-11/dmux.vhd
-Z26 FE:/2022/Arch/Project/Phase2/PDP-11/dmux.vhd
+R4
+R5
+Z27 8E:/third year/semester 1/Arch/arch project/VHDL/decoder.vhdl
+Z28 FE:/third year/semester 1/Arch/arch project/VHDL/decoder.vhdl
+l0
+L6
+V^E0=X<zaGg6_mleN4DlJ10
+!s100 ]MD=>^VW@E:nMzW75b<0Z1
+R8
+32
+Z29 !s110 1610940238
+!i10b 1
+Z30 !s108 1610940238.000000
+Z31 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|E:/third year/semester 1/Arch/arch project/VHDL/decoder.vhdl|
+Z32 !s107 E:/third year/semester 1/Arch/arch project/VHDL/decoder.vhdl|
+!i113 1
+R13
+R14
+Amy_decoder
+R26
+R3
+R4
+DEx4 work 7 decoder 0 22 ^E0=X<zaGg6_mleN4DlJ10
+l15
+L14
+VgM]cci1`]2;]EgEEbo_YP2
+!s100 ?iHV>D5z]1E]M0<>OL81X2
+R8
+32
+R29
+!i10b 1
+R30
+R31
+R32
+!i113 1
+R13
+R14
+Edmux
+Z33 w1610046328
+R3
+R4
+R5
+Z34 8E:\third year\semester 1\Arch\arch project\VHDL\partD.vhd
+Z35 FE:\third year\semester 1\Arch\arch project\VHDL\partD.vhd
 l0
 L5
 VD1:Ne@:=UQoj;b@Q7APIz3
 !s100 G_2OTMg485>5mocK:8E5[0
-R6
-32
-R7
-!i10b 1
 R8
-Z27 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|E:/2022/Arch/Project/Phase2/PDP-11/dmux.vhd|
-Z28 !s107 E:/2022/Arch/Project/Phase2/PDP-11/dmux.vhd|
+32
+R9
+!i10b 1
+R10
+Z36 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|E:\third year\semester 1\Arch\arch project\VHDL\partD.vhd|
+Z37 !s107 E:\third year\semester 1\Arch\arch project\VHDL\partD.vhd|
 !i113 1
-R11
-R12
+R13
+R14
 Ad_mux
-R1
-R2
+R3
+R4
 DEx4 work 4 dmux 0 22 D1:Ne@:=UQoj;b@Q7APIz3
 l17
 L14
 VhgM1`CWcAL8UnBa91_eXl2
 !s100 [Rd8nWJbOl2zX4C3Kn5zY2
-R6
-32
-R7
-!i10b 1
 R8
-R27
-R28
+32
+R9
+!i10b 1
+R10
+R36
+R37
 !i113 1
-R11
-R12
+R13
+R14
 Efinalmux
-Z29 w1610892632
-R1
-R2
+Z38 w1610046874
 R3
-Z30 8E:/2022/Arch/Project/Phase2/PDP-11/lab2_1_25.vhd
-Z31 FE:/2022/Arch/Project/Phase2/PDP-11/lab2_1_25.vhd
+R4
+R5
+Z39 8E:\third year\semester 1\Arch\arch project\VHDL\ALU.vhd
+Z40 FE:\third year\semester 1\Arch\arch project\VHDL\ALU.vhd
 l0
 L4
 VP8[HVGHBjBmDk?nJCL_Gf0
 !s100 W>KS56S_RS<fV=3[[i[>F0
-R6
-32
-R7
-!i10b 1
 R8
-Z32 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|E:/2022/Arch/Project/Phase2/PDP-11/lab2_1_25.vhd|
-Z33 !s107 E:/2022/Arch/Project/Phase2/PDP-11/lab2_1_25.vhd|
+32
+R29
+!i10b 1
+R30
+Z41 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|E:\third year\semester 1\Arch\arch project\VHDL\ALU.vhd|
+Z42 !s107 E:\third year\semester 1\Arch\arch project\VHDL\ALU.vhd|
 !i113 1
-R11
-R12
+R13
+R14
 Af_mux
-R1
-R2
+R3
+R4
 DEx4 work 8 finalmux 0 22 P8[HVGHBjBmDk?nJCL_Gf0
 l58
 L15
-VVBo4iZ[F64Uj9k9U8jVTF1
-!s100 BNd0AM@FNYX^cQAf=VX^G1
-R6
-32
-R7
-!i10b 1
+VV`=I@`b6=MWGe:gS4E6FB3
+!s100 MG2H9dTXFE=0mM`DBAJbb1
 R8
-R32
-R33
+32
+R29
+!i10b 1
+R30
+R41
+R42
 !i113 1
-R11
-R12
+R13
+R14
 Elab3
-R0
-R1
-R2
+Z43 w1605956884
 R3
-Z34 8E:/2022/Arch/Project/Phase2/PDP-11/lab3.vhdl
-Z35 FE:/2022/Arch/Project/Phase2/PDP-11/lab3.vhdl
+R4
+R5
+Z44 8E:/third year/semester 1/Arch/arch project/VHDL/lab3.vhdl
+Z45 FE:/third year/semester 1/Arch/arch project/VHDL/lab3.vhdl
 l0
 L4
 VMPDVTl@;6=hl_>B:Q<63`0
 !s100 G04g3i:UCVIZ5:^G70SOP1
-R6
-32
-R7
-!i10b 1
 R8
-Z36 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|E:/2022/Arch/Project/Phase2/PDP-11/lab3.vhdl|
-Z37 !s107 E:/2022/Arch/Project/Phase2/PDP-11/lab3.vhdl|
+32
+R29
+!i10b 1
+R30
+Z46 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|E:/third year/semester 1/Arch/arch project/VHDL/lab3.vhdl|
+Z47 !s107 E:/third year/semester 1/Arch/arch project/VHDL/lab3.vhdl|
 !i113 1
-R11
-R12
+R13
+R14
 Amy_lab3
-R1
-R2
+R3
+R4
 DEx4 work 4 lab3 0 22 MPDVTl@;6=hl_>B:Q<63`0
 l41
 L20
 VVFeUU1S]TJ5@0cX5Y]QWF1
 !s100 i1G4iR=^jXLiHg`X_oBo30
-R6
-32
-R7
-!i10b 1
 R8
-R36
-R37
+32
+R29
+!i10b 1
+R30
+R46
+R47
 !i113 1
-R11
-R12
+R13
+R14
 Elab4
-R0
-Z38 DPx4 ieee 11 numeric_std 0 22 :ASDNFgHXf_ih3J@9F3Ze1
-Z39 DPx4 ieee 15 std_logic_arith 0 22 [G314=:2zXJ`VORJe1J@Z1
-Z40 DPx4 ieee 18 std_logic_unsigned 0 22 ;eZjO2D4ZDz<]0>8AL<ne1
+Z48 w1605985194
+R26
 R1
 R2
 R3
-Z41 8E:/2022/Arch/Project/Phase2/PDP-11/lab4.vhdl
-Z42 FE:/2022/Arch/Project/Phase2/PDP-11/lab4.vhdl
+R4
+R5
+Z49 8E:/third year/semester 1/Arch/arch project/VHDL/lab4.vhdl
+Z50 FE:/third year/semester 1/Arch/arch project/VHDL/lab4.vhdl
 l0
 L5
 V?2ZSGaYjb?0V[8LY:[JgM2
 !s100 EJkShRzSa9Hj2lb1DWo[01
-R6
-32
-R7
-!i10b 1
 R8
-Z43 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|E:/2022/Arch/Project/Phase2/PDP-11/lab4.vhdl|
-Z44 !s107 E:/2022/Arch/Project/Phase2/PDP-11/lab4.vhdl|
+32
+R29
+!i10b 1
+R30
+Z51 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|E:/third year/semester 1/Arch/arch project/VHDL/lab4.vhdl|
+Z52 !s107 E:/third year/semester 1/Arch/arch project/VHDL/lab4.vhdl|
 !i113 1
-R11
-R12
+R13
+R14
 Amy_lab4
-R38
-R39
-R40
+R26
 R1
 R2
+R3
+R4
 DEx4 work 4 lab4 0 22 ?2ZSGaYjb?0V[8LY:[JgM2
 l73
 L23
 VT8JhTjeG6dK03h:9Hdcb^1
 !s100 KPZd3KMQ5Y[WUeW`VARoR3
-R6
-32
-R7
-!i10b 1
 R8
-R43
-R44
+32
+R29
+!i10b 1
+R30
+R51
+R52
 !i113 1
-R11
-R12
+R13
+R14
 Emy_adder
-R0
-R1
-R2
+Z53 w1610926828
 R3
-Z45 8E:/2022/Arch/Project/Phase2/PDP-11/nadder.vhd
-Z46 FE:/2022/Arch/Project/Phase2/PDP-11/nadder.vhd
+R4
+R5
+Z54 8E:/third year/semester 1/Arch/arch project/VHDL/nAdder.vhd
+Z55 FE:/third year/semester 1/Arch/arch project/VHDL/nAdder.vhd
 l0
 L4
 VidLH7GLRL0m^Ta<e>Z2Ib3
 !s100 9dXSTJSA2K3laH^Pk:dhn3
-R6
-32
-R7
-!i10b 1
 R8
-Z47 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|E:/2022/Arch/Project/Phase2/PDP-11/nadder.vhd|
-Z48 !s107 E:/2022/Arch/Project/Phase2/PDP-11/nadder.vhd|
+32
+R9
+!i10b 1
+R10
+Z56 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|E:/third year/semester 1/Arch/arch project/VHDL/nAdder.vhd|
+Z57 !s107 E:/third year/semester 1/Arch/arch project/VHDL/nAdder.vhd|
 !i113 1
-R11
-R12
+R13
+R14
 Aa_my_adder
-R1
-R2
+R3
+R4
 DEx4 work 8 my_adder 0 22 idLH7GLRL0m^Ta<e>Z2Ib3
 l10
 L9
 VBW2E5:U@o2hblQ`?l?eoG3
 !s100 kMjAGce2nge1<iUcGW1eE2
-R6
-32
-R7
-!i10b 1
 R8
-R47
-R48
+32
+R9
+!i10b 1
+R10
+R56
+R57
 !i113 1
-R11
-R12
+R13
+R14
 Emy_nadder
-R0
-R1
-R2
+R53
 R3
-R45
-R46
+R4
+R5
+R54
+R55
 l0
 L21
 VDfN_hPZU_dA^OYiEcL=PX3
 !s100 aN_b]CFNHcTi8]G]Sk8a53
-R6
-32
-R7
-!i10b 1
 R8
-R47
-R48
+32
+R9
+!i10b 1
+R10
+R56
+R57
 !i113 1
-R11
-R12
+R13
+R14
 Aa_my_nadder
-R1
-R2
+R3
+R4
 DEx4 work 9 my_nadder 0 22 DfN_hPZU_dA^OYiEcL=PX3
 l36
 L31
 VGi4]4[WIkIJ:<[kWQjPAT3
 !s100 _WRWa;B]lK5bIdPVF[SG91
-R6
-32
-R7
-!i10b 1
 R8
-R47
-R48
+32
+R9
+!i10b 1
+R10
+R56
+R57
 !i113 1
-R11
-R12
+R13
+R14
 Emy_ndff
-R0
-R1
-R2
+Z58 w1605959424
 R3
-Z49 8E:/2022/Arch/Project/Phase2/PDP-11/nDFF.vhdl
-Z50 FE:/2022/Arch/Project/Phase2/PDP-11/nDFF.vhdl
+R4
+R5
+Z59 8E:/third year/semester 1/Arch/arch project/VHDL/register.vhdl
+Z60 FE:/third year/semester 1/Arch/arch project/VHDL/register.vhdl
 l0
 L3
 V`<K`2HlagdF3MjY11>bl_0
 !s100 FXMLeg7NI7c7i]PM?Z4hJ1
-R6
-32
-R7
-!i10b 1
 R8
-Z51 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|E:/2022/Arch/Project/Phase2/PDP-11/nDFF.vhdl|
-Z52 !s107 E:/2022/Arch/Project/Phase2/PDP-11/nDFF.vhdl|
+32
+Z61 !s110 1610940240
+!i10b 1
+Z62 !s108 1610940240.000000
+Z63 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|E:/third year/semester 1/Arch/arch project/VHDL/register.vhdl|
+Z64 !s107 E:/third year/semester 1/Arch/arch project/VHDL/register.vhdl|
 !i113 1
-R11
-R12
+R13
+R14
 Aa_my_ndff
-R1
-R2
+R3
+R4
 DEx4 work 7 my_ndff 0 22 `<K`2HlagdF3MjY11>bl_0
 l11
 L10
 VDcT9A<B]bWR:1IjaVDU4`3
 !s100 FlTmR77ma1DbMX4oTk6bW1
-R6
-32
-R7
-!i10b 1
 R8
-R51
-R52
+32
+R61
+!i10b 1
+R62
+R63
+R64
 !i113 1
-R11
-R12
-Etri_state_buffer
-R0
-R1
-R2
+R13
+R14
+Epdp_11
+Z65 w1610950833
 R3
-Z53 8E:/2022/Arch/Project/Phase2/PDP-11/triStateBuffer.vhdl
-Z54 FE:/2022/Arch/Project/Phase2/PDP-11/triStateBuffer.vhdl
+R4
+R5
+Z66 8E:\third year\semester 1\Arch\arch project\VHDL\PDP_11.vhd
+Z67 FE:\third year\semester 1\Arch\arch project\VHDL\PDP_11.vhd
 l0
 L4
-VW=XiUf6k3aYB@Hb1BjA[m3
-!s100 al2g]nC^C^GN=<zd8@@GW1
-R6
-32
-R7
-!i10b 1
+VQTWRiG6<65QCK:;jon0@a3
+!s100 KHf4MBCbMZYSOMS:=Z<<[0
 R8
-Z55 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|E:/2022/Arch/Project/Phase2/PDP-11/triStateBuffer.vhdl|
-Z56 !s107 E:/2022/Arch/Project/Phase2/PDP-11/triStateBuffer.vhdl|
+32
+Z68 !s110 1610950838
+!i10b 1
+Z69 !s108 1610950838.000000
+Z70 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|E:\third year\semester 1\Arch\arch project\VHDL\PDP_11.vhd|
+Z71 !s107 E:\third year\semester 1\Arch\arch project\VHDL\PDP_11.vhd|
 !i113 1
-R11
-R12
+R13
+R14
+Amy_pdp_11
+R3
+R4
+Z72 DEx4 work 6 pdp_11 0 22 QTWRiG6<65QCK:;jon0@a3
+l90
+L16
+V2_mVYMA9a^c=dfPT1A<em2
+!s100 Tde=IK?fX@^jYL8eRHDWn1
+R8
+32
+R68
+!i10b 1
+R69
+R70
+R71
+!i113 1
+R13
+R14
+Eram
+Z73 w1610950817
+R26
+R3
+R4
+R5
+Z74 8E:/third year/semester 1/Arch/arch project/VHDL/ram.vhd
+Z75 FE:/third year/semester 1/Arch/arch project/VHDL/ram.vhd
+l0
+L5
+VJXUK;3T[?W8LC[<k<`AVH0
+!s100 9^:;G4^<:fcKW>WmOQNH33
+R8
+32
+Z76 !s110 1610950822
+!i10b 1
+Z77 !s108 1610950822.000000
+Z78 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|E:/third year/semester 1/Arch/arch project/VHDL/ram.vhd|
+Z79 !s107 E:/third year/semester 1/Arch/arch project/VHDL/ram.vhd|
+!i113 1
+R13
+R14
+Asyncrama
+R26
+R3
+R4
+DEx4 work 3 ram 0 22 JXUK;3T[?W8LC[<k<`AVH0
+l34
+L15
+ViE`:B^M13h4adLd;mNm1a0
+!s100 8UIDA?i^JI4SH7LVH@_:@0
+R8
+32
+R76
+!i10b 1
+R77
+R78
+R79
+!i113 1
+R13
+R14
+Etri_state_buffer
+Z80 w1610930101
+R3
+R4
+R5
+Z81 8E:/third year/semester 1/Arch/arch project/VHDL/triStateBuffer.vhdl
+Z82 FE:/third year/semester 1/Arch/arch project/VHDL/triStateBuffer.vhdl
+l0
+L4
+VBncNAHj>cPIVE`c:9`0bK1
+!s100 b4P[:dVJTmR=czVak_mW01
+R8
+32
+R61
+!i10b 1
+R62
+Z83 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|E:/third year/semester 1/Arch/arch project/VHDL/triStateBuffer.vhdl|
+Z84 !s107 E:/third year/semester 1/Arch/arch project/VHDL/triStateBuffer.vhdl|
+!i113 1
+R13
+R14
 Amy_tri_state_buffer
-R1
-R2
-Z57 DEx4 work 16 tri_state_buffer 0 22 W=XiUf6k3aYB@Hb1BjA[m3
+R3
+R4
+DEx4 work 16 tri_state_buffer 0 22 BncNAHj>cPIVE`c:9`0bK1
 l13
 L12
-Z58 VAY:<^N`[0h`;m2l_M8zM40
-Z59 !s100 z;a^gmh@G?PO7jgTejN::0
-R6
-32
-R7
-!i10b 1
+VAY:<^N`[0h`;m2l_M8zM40
+!s100 z;a^gmh@G?PO7jgTejN::0
 R8
-R55
-R56
+32
+R61
+!i10b 1
+R62
+R83
+R84
 !i113 1
-R11
-R12
+R13
+R14

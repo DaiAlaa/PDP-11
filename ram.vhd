@@ -7,7 +7,7 @@ GENERIC ( n : integer := 16);
 	PORT(
 		clk : IN std_logic;
 		we  : IN std_logic;
-		address : IN  std_logic_vector(5 DOWNTO 0);
+		address : IN  std_logic_vector(n-1 DOWNTO 0);
 		datain  : IN  std_logic_vector(n-1 DOWNTO 0);
 		dataout : OUT std_logic_vector(n-1 DOWNTO 0));
 END ENTITY ram;
