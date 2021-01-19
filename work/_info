@@ -9,7 +9,7 @@ z2
 cModel Technology
 dE:/third year/semester 1/Arch/arch project/VHDL
 Eamux
-Z0 w1611021466
+Z0 w1611058771
 Z1 DPx4 ieee 15 std_logic_arith 0 22 [G314=:2zXJ`VORJe1J@Z1
 Z2 DPx4 ieee 18 std_logic_unsigned 0 22 ;eZjO2D4ZDz<]0>8AL<ne1
 Z3 DPx3 std 6 textio 0 22 zE1`LPoLg^DX3Oz^4Fj1K3
@@ -23,9 +23,9 @@ VLnKGHV:Rf^DXX[j_9CQ:>2
 !s100 QJi<?<50MKfcnG[EJ[D0i3
 Z8 OV;C;10.5b;63
 32
-Z9 !s110 1611050158
+Z9 !s110 1611058777
 !i10b 1
-Z10 !s108 1611050158.000000
+Z10 !s108 1611058777.000000
 Z11 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|E:/2022/Arch/Project/Phase2/PDP-11/partA.vhd|
 Z12 !s107 E:/2022/Arch/Project/Phase2/PDP-11/partA.vhd|
 !i113 1
@@ -37,10 +37,10 @@ R2
 R3
 R4
 DEx4 work 4 amux 0 22 LnKGHV:Rf^DXX[j_9CQ:>2
-l31
+l32
 L16
-Vj6CkKJo6Q3W8m@:GzYPo61
-!s100 1X[<C`fU;LRghMEVmXQO:1
+Vi0YeJ>H27j`T4aOk98T]D1
+!s100 Zd25DCYM`6XnUKiUnPYU]3
 R8
 32
 R9
@@ -52,23 +52,23 @@ R12
 R13
 R14
 Ebmux
-R0
+Z15 w1611021466
 R3
 R4
 R5
-Z15 8E:/2022/Arch/Project/Phase2/PDP-11/partB.vhd
-Z16 FE:/2022/Arch/Project/Phase2/PDP-11/partB.vhd
+Z16 8E:/2022/Arch/Project/Phase2/PDP-11/partB.vhd
+Z17 FE:/2022/Arch/Project/Phase2/PDP-11/partB.vhd
 l0
 L4
 VRziEh;mM^S0dno4FWCZSi3
 !s100 Rf>g[[V_iZzho@7`Jm[;_1
 R8
 32
-R9
+Z18 !s110 1611050158
 !i10b 1
-R10
-Z17 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|E:/2022/Arch/Project/Phase2/PDP-11/partB.vhd|
-Z18 !s107 E:/2022/Arch/Project/Phase2/PDP-11/partB.vhd|
+Z19 !s108 1611050158.000000
+Z20 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|E:/2022/Arch/Project/Phase2/PDP-11/partB.vhd|
+Z21 !s107 E:/2022/Arch/Project/Phase2/PDP-11/partB.vhd|
 !i113 1
 R13
 R14
@@ -82,42 +82,42 @@ VccU?;OGjlR:PLL9_bWDzP3
 !s100 3@WECcR^[a9gMPMOh?7@Y2
 R8
 32
-R9
-!i10b 1
-R10
-R17
 R18
+!i10b 1
+R19
+R20
+R21
 !i113 1
 R13
 R14
 Ebranch
-Z19 w1610999791
+Z22 w1610999791
 R1
 R2
-Z20 DPx4 ieee 11 numeric_std 0 22 :ASDNFgHXf_ih3J@9F3Ze1
+Z23 DPx4 ieee 11 numeric_std 0 22 :ASDNFgHXf_ih3J@9F3Ze1
 R3
 R4
 R5
-Z21 8E:/2022/Arch/Project/Phase2/PDP-11/Branching.vhd
-Z22 FE:/2022/Arch/Project/Phase2/PDP-11/Branching.vhd
+Z24 8E:/2022/Arch/Project/Phase2/PDP-11/Branching.vhd
+Z25 FE:/2022/Arch/Project/Phase2/PDP-11/Branching.vhd
 l0
 L6
 VP[nQ<HOYele<mDLj>Ie2B0
 !s100 VFZz<c@M17FFM2lBRR5dY3
 R8
 32
-R9
+R18
 !i10b 1
-R10
-Z23 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|E:/2022/Arch/Project/Phase2/PDP-11/Branching.vhd|
-Z24 !s107 E:/2022/Arch/Project/Phase2/PDP-11/Branching.vhd|
+R19
+Z26 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|E:/2022/Arch/Project/Phase2/PDP-11/Branching.vhd|
+Z27 !s107 E:/2022/Arch/Project/Phase2/PDP-11/Branching.vhd|
 !i113 1
 R13
 R14
 Af
 R1
 R2
-R20
+R23
 R3
 R4
 DEx4 work 6 branch 0 22 P[nQ<HOYele<mDLj>Ie2B0
@@ -127,32 +127,32 @@ VQf7=WLBz]6:EFmL;0HbPT1
 !s100 jVAU3C9z:AS`Qla8S2W5<2
 R8
 32
-R9
+R18
 !i10b 1
-R10
-R23
-R24
+R19
+R26
+R27
 !i113 1
 R13
 R14
 Ecmux
-Z25 w1610968477
+Z28 w1610968477
 R3
 R4
 R5
-Z26 8E:/2022/Arch/Project/Phase2/PDP-11/partC.vhd
-Z27 FE:/2022/Arch/Project/Phase2/PDP-11/partC.vhd
+Z29 8E:/2022/Arch/Project/Phase2/PDP-11/partC.vhd
+Z30 FE:/2022/Arch/Project/Phase2/PDP-11/partC.vhd
 l0
 L5
 V9lGA5GmhbCHHd7PCl=48N3
 !s100 b3W9XVfFXWm1ni:YYX36i1
 R8
 32
-R9
+R18
 !i10b 1
-R10
-Z28 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|E:/2022/Arch/Project/Phase2/PDP-11/partC.vhd|
-Z29 !s107 E:/2022/Arch/Project/Phase2/PDP-11/partC.vhd|
+R19
+Z31 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|E:/2022/Arch/Project/Phase2/PDP-11/partC.vhd|
+Z32 !s107 E:/2022/Arch/Project/Phase2/PDP-11/partC.vhd|
 !i113 1
 R13
 R14
@@ -166,38 +166,38 @@ Vg=daI7;?O^oLZiL][]VTb0
 !s100 H`8D8G7=Zai9Tk]P4V]@O0
 R8
 32
-R9
+R18
 !i10b 1
-R10
-R28
-R29
+R19
+R31
+R32
 !i113 1
 R13
 R14
 Edecoder
-R25
-R20
+R28
+R23
 R3
 R4
 R5
-Z30 8E:/2022/Arch/Project/Phase2/PDP-11/decoder.vhdl
-Z31 FE:/2022/Arch/Project/Phase2/PDP-11/decoder.vhdl
+Z33 8E:/2022/Arch/Project/Phase2/PDP-11/decoder.vhdl
+Z34 FE:/2022/Arch/Project/Phase2/PDP-11/decoder.vhdl
 l0
 L6
 V^E0=X<zaGg6_mleN4DlJ10
 !s100 ]MD=>^VW@E:nMzW75b<0Z1
 R8
 32
-R9
+R18
 !i10b 1
-R10
-Z32 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|E:/2022/Arch/Project/Phase2/PDP-11/decoder.vhdl|
-Z33 !s107 E:/2022/Arch/Project/Phase2/PDP-11/decoder.vhdl|
+R19
+Z35 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|E:/2022/Arch/Project/Phase2/PDP-11/decoder.vhdl|
+Z36 !s107 E:/2022/Arch/Project/Phase2/PDP-11/decoder.vhdl|
 !i113 1
 R13
 R14
 Amy_decoder
-R20
+R23
 R3
 R4
 DEx4 work 7 decoder 0 22 ^E0=X<zaGg6_mleN4DlJ10
@@ -207,32 +207,32 @@ VgM]cci1`]2;]EgEEbo_YP2
 !s100 ?iHV>D5z]1E]M0<>OL81X2
 R8
 32
-R9
+R18
 !i10b 1
-R10
-R32
-R33
+R19
+R35
+R36
 !i113 1
 R13
 R14
 Edmux
-R0
+R15
 R3
 R4
 R5
-Z34 8E:/2022/Arch/Project/Phase2/PDP-11/partD.vhd
-Z35 FE:/2022/Arch/Project/Phase2/PDP-11/partD.vhd
+Z37 8E:/2022/Arch/Project/Phase2/PDP-11/partD.vhd
+Z38 FE:/2022/Arch/Project/Phase2/PDP-11/partD.vhd
 l0
 L5
 V7WdNW4@bDdH^bRH@@@0fI3
 !s100 J<E4AWI?2QeJVdLERfbbe3
 R8
 32
-R9
+R18
 !i10b 1
-R10
-Z36 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|E:/2022/Arch/Project/Phase2/PDP-11/partD.vhd|
-Z37 !s107 E:/2022/Arch/Project/Phase2/PDP-11/partD.vhd|
+R19
+Z39 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|E:/2022/Arch/Project/Phase2/PDP-11/partD.vhd|
+Z40 !s107 E:/2022/Arch/Project/Phase2/PDP-11/partD.vhd|
 !i113 1
 R13
 R14
@@ -246,32 +246,32 @@ V]I=9:zhNPQNH8mOiI3H3h0
 !s100 K^A2<fjG4`TLg4C?8<8ZQ2
 R8
 32
-R9
+R18
 !i10b 1
-R10
-R36
-R37
+R19
+R39
+R40
 !i113 1
 R13
 R14
 Efinalmux
-R0
+R15
 R3
 R4
 R5
-Z38 8E:/2022/Arch/Project/Phase2/PDP-11/ALU.vhd
-Z39 FE:/2022/Arch/Project/Phase2/PDP-11/ALU.vhd
+Z41 8E:/2022/Arch/Project/Phase2/PDP-11/ALU.vhd
+Z42 FE:/2022/Arch/Project/Phase2/PDP-11/ALU.vhd
 l0
 L4
 Vb>?aHGjcf]Sl:Jz3RI1>Y3
 !s100 _JW[13D39Ba`E8TXUR_mh0
 R8
 32
-R9
+R18
 !i10b 1
-R10
-Z40 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|E:/2022/Arch/Project/Phase2/PDP-11/ALU.vhd|
-Z41 !s107 E:/2022/Arch/Project/Phase2/PDP-11/ALU.vhd|
+R19
+Z43 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|E:/2022/Arch/Project/Phase2/PDP-11/ALU.vhd|
+Z44 !s107 E:/2022/Arch/Project/Phase2/PDP-11/ALU.vhd|
 !i113 1
 R13
 R14
@@ -285,32 +285,32 @@ V?<DdJ9?HGJeK:m>>XgmAz2
 !s100 mbjHWaK4l2EjKEcEe0JiP3
 R8
 32
-R9
+R18
 !i10b 1
-R10
-R40
-R41
+R19
+R43
+R44
 !i113 1
 R13
 R14
 Elab3
-Z42 w1610889121
+Z45 w1610889121
 R3
 R4
 R5
-Z43 8E:/2022/Arch/Project/Phase2/PDP-11/lab3.vhdl
-Z44 FE:/2022/Arch/Project/Phase2/PDP-11/lab3.vhdl
+Z46 8E:/2022/Arch/Project/Phase2/PDP-11/lab3.vhdl
+Z47 FE:/2022/Arch/Project/Phase2/PDP-11/lab3.vhdl
 l0
 L4
 VMPDVTl@;6=hl_>B:Q<63`0
 !s100 G04g3i:UCVIZ5:^G70SOP1
 R8
 32
-R9
+R18
 !i10b 1
-R10
-Z45 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|E:/2022/Arch/Project/Phase2/PDP-11/lab3.vhdl|
-Z46 !s107 E:/2022/Arch/Project/Phase2/PDP-11/lab3.vhdl|
+R19
+Z48 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|E:/2022/Arch/Project/Phase2/PDP-11/lab3.vhdl|
+Z49 !s107 E:/2022/Arch/Project/Phase2/PDP-11/lab3.vhdl|
 !i113 1
 R13
 R14
@@ -324,40 +324,40 @@ VVFeUU1S]TJ5@0cX5Y]QWF1
 !s100 i1G4iR=^jXLiHg`X_oBo30
 R8
 32
-R9
+R18
 !i10b 1
-R10
-R45
-R46
+R19
+R48
+R49
 !i113 1
 R13
 R14
 Elab4
-R42
-R20
+R45
+R23
 R1
 R2
 R3
 R4
 R5
-Z47 8E:/2022/Arch/Project/Phase2/PDP-11/lab4.vhdl
-Z48 FE:/2022/Arch/Project/Phase2/PDP-11/lab4.vhdl
+Z50 8E:/2022/Arch/Project/Phase2/PDP-11/lab4.vhdl
+Z51 FE:/2022/Arch/Project/Phase2/PDP-11/lab4.vhdl
 l0
 L5
 V?2ZSGaYjb?0V[8LY:[JgM2
 !s100 EJkShRzSa9Hj2lb1DWo[01
 R8
 32
-R9
+R18
 !i10b 1
-R10
-Z49 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|E:/2022/Arch/Project/Phase2/PDP-11/lab4.vhdl|
-Z50 !s107 E:/2022/Arch/Project/Phase2/PDP-11/lab4.vhdl|
+R19
+Z52 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|E:/2022/Arch/Project/Phase2/PDP-11/lab4.vhdl|
+Z53 !s107 E:/2022/Arch/Project/Phase2/PDP-11/lab4.vhdl|
 !i113 1
 R13
 R14
 Amy_lab4
-R20
+R23
 R1
 R2
 R3
@@ -369,77 +369,77 @@ VT8JhTjeG6dK03h:9Hdcb^1
 !s100 KPZd3KMQ5Y[WUeW`VARoR3
 R8
 32
-R9
+R18
 !i10b 1
-R10
-R49
-R50
+R19
+R52
+R53
 !i113 1
 R13
 R14
 Emapalu
-Z51 w1610994831
+Z54 w1611058216
 R1
 R2
-R20
+R23
 R3
 R4
 R5
-Z52 8E:/2022/Arch/Project/Phase2/PDP-11/MapALU.vhd
-Z53 FE:/2022/Arch/Project/Phase2/PDP-11/MapALU.vhd
+Z55 8E:/2022/Arch/Project/Phase2/PDP-11/MapALU.vhd
+Z56 FE:/2022/Arch/Project/Phase2/PDP-11/MapALU.vhd
 l0
 L6
 VYJkZ;S_o6P6_fADO5DHXP1
 !s100 _3`E?K;2dT?WU_K9V`f9e2
 R8
 32
-R9
+Z57 !s110 1611058420
 !i10b 1
-R10
-Z54 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|E:/2022/Arch/Project/Phase2/PDP-11/MapALU.vhd|
-Z55 !s107 E:/2022/Arch/Project/Phase2/PDP-11/MapALU.vhd|
+Z58 !s108 1611058420.000000
+Z59 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|E:/2022/Arch/Project/Phase2/PDP-11/MapALU.vhd|
+Z60 !s107 E:/2022/Arch/Project/Phase2/PDP-11/MapALU.vhd|
 !i113 1
 R13
 R14
 Amapalu
 R1
 R2
-R20
+R23
 R3
 R4
 DEx4 work 6 mapalu 0 22 YJkZ;S_o6P6_fADO5DHXP1
 l11
 L10
-VM<kR`jQCT3o]1ZJ<JNin[2
-!s100 37UCQ=EH>KEk:YSNRUD:[1
+VA8JEUFfJZ`?N=Ph]CAo3L2
+!s100 7Q_;ei0dPll5X`TeQRze>1
 R8
 32
-R9
+R57
 !i10b 1
-R10
-R54
-R55
+R58
+R59
+R60
 !i113 1
 R13
 R14
 Emy_adder
-R25
+R28
 R3
 R4
 R5
-Z56 8E:/2022/Arch/Project/Phase2/PDP-11/nadder.vhd
-Z57 FE:/2022/Arch/Project/Phase2/PDP-11/nadder.vhd
+Z61 8E:/2022/Arch/Project/Phase2/PDP-11/nadder.vhd
+Z62 FE:/2022/Arch/Project/Phase2/PDP-11/nadder.vhd
 l0
 L4
 VidLH7GLRL0m^Ta<e>Z2Ib3
 !s100 9dXSTJSA2K3laH^Pk:dhn3
 R8
 32
-R9
+R18
 !i10b 1
-R10
-Z58 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|E:/2022/Arch/Project/Phase2/PDP-11/nadder.vhd|
-Z59 !s107 E:/2022/Arch/Project/Phase2/PDP-11/nadder.vhd|
+R19
+Z63 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|E:/2022/Arch/Project/Phase2/PDP-11/nadder.vhd|
+Z64 !s107 E:/2022/Arch/Project/Phase2/PDP-11/nadder.vhd|
 !i113 1
 R13
 R14
@@ -453,32 +453,32 @@ VBW2E5:U@o2hblQ`?l?eoG3
 !s100 kMjAGce2nge1<iUcGW1eE2
 R8
 32
-R9
+R18
 !i10b 1
-R10
-R58
-R59
+R19
+R63
+R64
 !i113 1
 R13
 R14
 Emy_nadder
-R25
+R28
 R3
 R4
 R5
-R56
-R57
+R61
+R62
 l0
 L21
 VDfN_hPZU_dA^OYiEcL=PX3
 !s100 aN_b]CFNHcTi8]G]Sk8a53
 R8
 32
-R9
+R18
 !i10b 1
-R10
-R58
-R59
+R19
+R63
+R64
 !i113 1
 R13
 R14
@@ -492,32 +492,32 @@ VGi4]4[WIkIJ:<[kWQjPAT3
 !s100 _WRWa;B]lK5bIdPVF[SG91
 R8
 32
-R9
+R18
 !i10b 1
-R10
-R58
-R59
+R19
+R63
+R64
 !i113 1
 R13
 R14
 Emy_ndff
-Z60 w1611042022
+Z65 w1611042022
 R3
 R4
 R5
-Z61 8E:\2022\Arch\Project\Phase2\PDP-11\register.vhdl
-Z62 FE:\2022\Arch\Project\Phase2\PDP-11\register.vhdl
+Z66 8E:\2022\Arch\Project\Phase2\PDP-11\register.vhdl
+Z67 FE:\2022\Arch\Project\Phase2\PDP-11\register.vhdl
 l0
 L3
 V`<K`2HlagdF3MjY11>bl_0
 !s100 FXMLeg7NI7c7i]PM?Z4hJ1
 R8
 32
-R9
+R18
 !i10b 1
-R10
-Z63 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|E:\2022\Arch\Project\Phase2\PDP-11\register.vhdl|
-Z64 !s107 E:\2022\Arch\Project\Phase2\PDP-11\register.vhdl|
+R19
+Z68 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|E:\2022\Arch\Project\Phase2\PDP-11\register.vhdl|
+Z69 !s107 E:\2022\Arch\Project\Phase2\PDP-11\register.vhdl|
 !i113 1
 R13
 R14
@@ -531,122 +531,122 @@ V>RnKh?Ba^Uc?FPPW>f[bZ0
 !s100 OhK[GBHMCXggPg>4NXmK?2
 R8
 32
-R9
+R18
 !i10b 1
-R10
-R63
-R64
+R19
+R68
+R69
 !i113 1
 R13
 R14
 Epdp_11
-Z65 w1611051036
+Z70 w1611058987
 R3
 R4
 R5
-Z66 8E:\2022\Arch\Project\Phase2\PDP-11\PDP_11.vhd
-Z67 FE:\2022\Arch\Project\Phase2\PDP-11\PDP_11.vhd
+Z71 8E:\2022\Arch\Project\Phase2\PDP-11\PDP_11.vhd
+Z72 FE:\2022\Arch\Project\Phase2\PDP-11\PDP_11.vhd
 l0
 L4
 VEf1cRgH<4_PVR7aH9KSNl3
 !s100 M1=Xl9EIHd>R=Z]V?O0100
 R8
 32
-Z68 !s110 1611051059
+Z73 !s110 1611059011
 !i10b 1
-Z69 !s108 1611051059.000000
-Z70 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|E:\2022\Arch\Project\Phase2\PDP-11\PDP_11.vhd|
-Z71 !s107 E:\2022\Arch\Project\Phase2\PDP-11\PDP_11.vhd|
+Z74 !s108 1611059011.000000
+Z75 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|E:\2022\Arch\Project\Phase2\PDP-11\PDP_11.vhd|
+Z76 !s107 E:\2022\Arch\Project\Phase2\PDP-11\PDP_11.vhd|
 !i113 1
 R13
 R14
 Amy_pdp_11
 R3
 R4
-Z72 DEx4 work 6 pdp_11 0 22 Ef1cRgH<4_PVR7aH9KSNl3
+Z77 DEx4 work 6 pdp_11 0 22 Ef1cRgH<4_PVR7aH9KSNl3
 l148
 L12
-VaKT`k306FnmUZadB<FKN:0
-!s100 USzf2:7]2fl??iCc?T]8b3
+VI6f]M;ga^Pl=cmZDQD<jH0
+!s100 ?I708Qn13UL:^mbZmOC>V3
 R8
 32
-R68
+R73
 !i10b 1
-R69
-R70
-R71
+R74
+R75
+R76
 !i113 1
 R13
 R14
 Epla
-Z73 w1611050145
+Z78 w1611057392
 R1
 R2
-R20
+R23
 R3
 R4
 R5
-Z74 8E:/2022/Arch/Project/Phase2/PDP-11/PLA.vhd
-Z75 FE:/2022/Arch/Project/Phase2/PDP-11/PLA.vhd
+Z79 8E:/2022/Arch/Project/Phase2/PDP-11/PLA.vhd
+Z80 FE:/2022/Arch/Project/Phase2/PDP-11/PLA.vhd
 l0
 L6
 VOR0@GQCX56;aeNAhH@nYO2
 !s100 DYk385fzMNP0A;]Yk7E?F1
 R8
 32
-R9
+Z81 !s110 1611057402
 !i10b 1
-R10
-Z76 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|E:/2022/Arch/Project/Phase2/PDP-11/PLA.vhd|
-Z77 !s107 E:/2022/Arch/Project/Phase2/PDP-11/PLA.vhd|
+Z82 !s108 1611057402.000000
+Z83 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|E:/2022/Arch/Project/Phase2/PDP-11/PLA.vhd|
+Z84 !s107 E:/2022/Arch/Project/Phase2/PDP-11/PLA.vhd|
 !i113 1
 R13
 R14
 Apla
 R1
 R2
-R20
+R23
 R3
 R4
 DEx4 work 3 pla 0 22 OR0@GQCX56;aeNAhH@nYO2
 l16
 L10
-V^NFHFV[SPz6BhTG`Kk?j;1
-!s100 V;l>>Hk;X=;ScYUBzgIW92
+Vg3RS>SE?Be=0baZ5@^ZP60
+!s100 957J[RVMgWK5XNa>FUbeB0
 R8
 32
-R9
+R81
 !i10b 1
-R10
-R76
-R77
+R82
+R83
+R84
 !i113 1
 R13
 R14
 Eram
-Z78 w1611037692
-R20
+Z85 w1611037692
+R23
 R3
 R4
 R5
-Z79 8E:/2022/Arch/Project/Phase2/PDP-11/ram.vhd
-Z80 FE:/2022/Arch/Project/Phase2/PDP-11/ram.vhd
+Z86 8E:/2022/Arch/Project/Phase2/PDP-11/ram.vhd
+Z87 FE:/2022/Arch/Project/Phase2/PDP-11/ram.vhd
 l0
 L5
 VJXUK;3T[?W8LC[<k<`AVH0
 !s100 9^:;G4^<:fcKW>WmOQNH33
 R8
 32
-R9
+R18
 !i10b 1
-R10
-Z81 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|E:/2022/Arch/Project/Phase2/PDP-11/ram.vhd|
-Z82 !s107 E:/2022/Arch/Project/Phase2/PDP-11/ram.vhd|
+R19
+Z88 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|E:/2022/Arch/Project/Phase2/PDP-11/ram.vhd|
+Z89 !s107 E:/2022/Arch/Project/Phase2/PDP-11/ram.vhd|
 !i113 1
 R13
 R14
 Asyncrama
-R20
+R23
 R3
 R4
 DEx4 work 3 ram 0 22 JXUK;3T[?W8LC[<k<`AVH0
@@ -656,38 +656,38 @@ VfJ^7XSdcTO3<Fk9bj:L;E1
 !s100 >lM:6BX^96VWACd=KFZBF1
 R8
 32
-R9
+R18
 !i10b 1
-R10
-R81
-R82
+R19
+R88
+R89
 !i113 1
 R13
 R14
 Erom
-Z83 w1611049749
-R20
+Z90 w1611049749
+R23
 R3
 R4
 R5
-Z84 8E:/2022/Arch/Project/Phase2/PDP-11/rom.vhd
-Z85 FE:/2022/Arch/Project/Phase2/PDP-11/rom.vhd
+Z91 8E:/2022/Arch/Project/Phase2/PDP-11/rom.vhd
+Z92 FE:/2022/Arch/Project/Phase2/PDP-11/rom.vhd
 l0
 L5
 V?QT]B8S7na_m94B`H@Hd20
 !s100 Pf4a_O6hVI@[JCQ><?XRF1
 R8
 32
-Z86 !s110 1611050159
+Z93 !s110 1611050159
 !i10b 1
-Z87 !s108 1611050159.000000
-Z88 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|E:/2022/Arch/Project/Phase2/PDP-11/rom.vhd|
-Z89 !s107 E:/2022/Arch/Project/Phase2/PDP-11/rom.vhd|
+Z94 !s108 1611050159.000000
+Z95 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|E:/2022/Arch/Project/Phase2/PDP-11/rom.vhd|
+Z96 !s107 E:/2022/Arch/Project/Phase2/PDP-11/rom.vhd|
 !i113 1
 R13
 R14
 Asyncroma
-R20
+R23
 R3
 R4
 DEx4 work 3 rom 0 22 ?QT]B8S7na_m94B`H@Hd20
@@ -697,32 +697,32 @@ VikWg:C]h;^=z<H`m]d36d0
 !s100 EJfWb]hnKd==^e[KhDgDU2
 R8
 32
-R86
+R93
 !i10b 1
-R87
-R88
-R89
+R94
+R95
+R96
 !i113 1
 R13
 R14
 Etri_state_buffer
-R25
+R28
 R3
 R4
 R5
-Z90 8E:/2022/Arch/Project/Phase2/PDP-11/triStateBuffer.vhdl
-Z91 FE:/2022/Arch/Project/Phase2/PDP-11/triStateBuffer.vhdl
+Z97 8E:/2022/Arch/Project/Phase2/PDP-11/triStateBuffer.vhdl
+Z98 FE:/2022/Arch/Project/Phase2/PDP-11/triStateBuffer.vhdl
 l0
 L4
 VBncNAHj>cPIVE`c:9`0bK1
 !s100 b4P[:dVJTmR=czVak_mW01
 R8
 32
-R86
+R93
 !i10b 1
-R87
-Z92 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|E:/2022/Arch/Project/Phase2/PDP-11/triStateBuffer.vhdl|
-Z93 !s107 E:/2022/Arch/Project/Phase2/PDP-11/triStateBuffer.vhdl|
+R94
+Z99 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|E:/2022/Arch/Project/Phase2/PDP-11/triStateBuffer.vhdl|
+Z100 !s107 E:/2022/Arch/Project/Phase2/PDP-11/triStateBuffer.vhdl|
 !i113 1
 R13
 R14
@@ -736,11 +736,11 @@ VAY:<^N`[0h`;m2l_M8zM40
 !s100 z;a^gmh@G?PO7jgTejN::0
 R8
 32
-R86
-!i10b 1
-R87
-R92
 R93
+!i10b 1
+R94
+R99
+R100
 !i113 1
 R13
 R14

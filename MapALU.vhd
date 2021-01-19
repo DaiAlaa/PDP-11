@@ -34,7 +34,7 @@ BEGIN
     ELSE "0101" when F = "10101"  
     ELSE "0010" when F = "10110" ;
 
-    CMP <= '1' when F ="10101"
+    CMP <= '1' when F ="10110"
     ELSE '0';
 
     Carry <= '0' when F = "00000"   

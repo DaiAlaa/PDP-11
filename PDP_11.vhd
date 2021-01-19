@@ -210,7 +210,7 @@ Begin
 
          ---------- F2 ---------
 	 reg7: my_nDFF GENERIC MAP(16) port map(control,Clk,Rst,outbus,R7);
-	 flag_reg: my_nDFF GENERIC MAP(16) port map(F2_output(3),Clk,Rst,outbus,flag);
+	 --flag_reg: my_nDFF GENERIC MAP(16) port map(F2_output(3),Clk,Rst,outbus,flag);
          IR_reg: my_nDFF GENERIC MAP(16) port map(F2_output(2),Clk,Rst,outbus,IR);
          ---------- F3 ------------
          reg0: my_nDFF GENERIC MAP(16) port map(select_register_in(0),Clk,Rst,outbus,R0);
@@ -241,7 +241,7 @@ Begin
          tri_MDR: tri_state_buffer port map(F1_output(2),MDR,outbus);
          tri_Z: tri_state_buffer port map(F1_output(3),Z,outbus);
          tri_temp: tri_state_buffer port map(F1_output(6),temp,outbus);
-	 tri_flag: tri_state_buffer port map(F1_output(7),flag,outbus);
+	 --tri_flag: tri_state_buffer port map(F1_output(7),flag,outbus);
          ----------- F6 ----------
          --tri_Y: tri_state_buffer port map(control_word(13),Y,ALUIn);
 

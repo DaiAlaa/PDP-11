@@ -28,9 +28,10 @@ Architecture a_mux OF amux IS
 	SIGNAL cout_temp : std_logic;
 	SIGNAL zero_flag : std_logic;
 	SIGNAL negative_flag : std_logic;
+        SIGNAL t : std_logic_vector(15 DOWNTO 0);
 BEGIN    
          atemp<=b(15 downto 0) when CmpEnable='1'
-         else a(15 downto 0);
+                        ELSE a(15 downto 0);
 
          btemp<="0000000000000000" when sel (1 downto 0)="00"
 	 else not b(15 downto 0) when sel (1 downto 0)&CmpEnable="100" 
@@ -40,10 +41,12 @@ BEGIN
 
          d_mux1: my_nadder port map(atemp,btemp,cin,dtemp,cout_temp);
          ftemp<="0000000000000000" when sel(1 downto 0)&cin="111"
-         else a when CmpEnable='1'
          else dtemp;
 
-         f(15 downto 0)<=ftemp;
+        t<= a when CmpEnable='1'
+        else ftemp ;
+
+         f(15 downto 0)<=t;
          
 	 cout<='0' when sel(1 downto 0)&cin="111"
          else cout_temp;    

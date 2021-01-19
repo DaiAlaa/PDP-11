@@ -42,7 +42,25 @@ BEGIN
                         uPc <= Temp;      
                     END IF;   
 
-                ElSIF ((IR(15)='1' AND (not IR(14)) ='1') OR BitOring(2 DownTo 0) = "001" ) THEN        --One Operand -> Fetch Destination
+                ELSIF BitOring(2 DownTo 0) = "001" THEN
+                    IF IR(5 DownTo 3) = "000" THEN
+                        Temp <=  "010000001";
+                        uPc <= Temp;
+                    ELSIF IR(5 DownTo 3) = "001" OR IR(5 DownTo 3) = "101" THEN
+                        Temp <=  "010010001";
+                        uPc <= Temp; 
+                    ELSIF IR(5 DownTo 3) = "010" OR IR(5 DownTo 3) = "110" THEN
+                        Temp <=  "010100001";
+                        uPc <= Temp; 
+                    ELSIF IR(5 DownTo 3) = "011" OR IR(5 DownTo 3) = "111" THEN
+                        Temp <=  "010110001";
+                        uPc <= Temp; 
+                    ELSIF IR(5 DownTo 3) = "100" THEN
+                        Temp <=  "010001001";
+                        uPc <= Temp; 
+                END IF;    
+
+                ElSIF ((IR(15)='1' AND (not IR(14)) ='1') AND BitOring(2 DownTo 0) = "000" ) THEN        --One Operand -> Fetch Destination
                     IF IR(5 DownTo 3) = "000" THEN
                         Temp <=  "010000001";
                         uPc <= Temp;
