@@ -132,7 +132,7 @@ Architecture my_PDP_11 OF PDP_11 IS
 
          signal uPC : std_logic_vector (8 downto 0);
          signal control_word : std_logic_vector (23 downto 0);
-
+	
          signal Cin: std_logic;
          signal CMP: std_logic;
          signal S: std_logic_vector (3 downto 0);
@@ -141,8 +141,11 @@ Architecture my_PDP_11 OF PDP_11 IS
 	 signal ALUIn: std_logic_vector(15 downto 0);
 	 signal CarryInput: std_logic;
          signal Rsrc,Rdst : std_logic_vector (2 downto 0);
+	 ---signal control: std_logic;
+	 signal yin: std_logic_vector(15 downto 0);
          
 Begin
+	  
          F1_enable <= '0' WHEN control_word(23 downto 21) ="000"
          ELSE '1';
          F2_enable <= '0' WHEN control_word(20 downto 19) ="00"
@@ -151,7 +154,6 @@ Begin
          ELSE '1';
          F4_enable <= '0' WHEN control_word(16 downto 15) ="00"
          ELSE '1';
-
          select_src_dst_out <= Rsrc WHEN control_word(23 downto 21) ="100"
                       ELSE Rdst WHEN control_word(23 downto 21) ="101"
                       ELSE (OTHERS=>'0');
@@ -176,6 +178,13 @@ Begin
 
          Ram_enable <= '1' WHEN control_word(7 downto 6) = "01" or control_word(7 downto 6) = "10"
                      ELSE '0';
+
+
+
+
+
+	 yin<= "000000"&IR(9 DOWNTO 0) when uPC ="000100000" else outbus;
+	
          ----------------------------------------------------------------------------------
 	 F1: decoder GENERIC MAP(3) port map(F1_enable,control_word(23 downto 21),F1_output); 
 	 F2: decoder GENERIC MAP(2) port map(F2_enable,control_word(20 downto 19),F2_output); 
@@ -202,7 +211,7 @@ Begin
 	
 	 temp_reg: my_nDFF GENERIC MAP(16) port map(F4_output(3),Clk,Rst,outbus,temp);
          ----------- F5 ----------
-	 Y_reg: my_nDFF GENERIC MAP(16) port map(control_word(14),Clk,Rst,outbus,Y);
+	 Y_reg: my_nDFF GENERIC MAP(16) port map(control_word(14),Clk,Rst,yin,Y);
 	 
 
 	 tri0: tri_state_buffer port map(select_register_out(0),R0,outbus);
@@ -219,7 +228,7 @@ Begin
          tri_temp: tri_state_buffer port map(F1_output(6),temp,outbus);
 	 tri_flag: tri_state_buffer port map(F1_output(7),flag,outbus);
          ----------- F6 ----------
-         tri_Y: tri_state_buffer port map(control_word(13),Y,ALUIn);
+         --tri_Y: tri_state_buffer port map(control_word(13),Y,ALUIn);
 
          my_ram: ram PORT MAP(Ram_clk,Ram_enable,MAR,MDR,Ram_out);              --Address Size
          my_rom: rom PORT MAP(Ram_clk,'0',uPC,(OTHERS=>'0'),control_word);              -- write enable always 0
@@ -231,8 +240,7 @@ Begin
          CarryInput<=flag(0); 
          ALU_comp: finalmux PORT MAP(Cin,CMP,Y,outbus,S(3 downto 0),ALUOut,flag,CarryOut,CarryInput);  
 
-         Y(9 DOWNTO 0) <= IR(9 DOWNTO 0) when uPC ="000100000" ;
-         Y(15 DOWNTO 10) <= "000000" when uPC ="000100000" ;
+         --Y<= "000000"&IR(9 DOWNTO 0) when uPC ="000100000";
          Rsrc <= IR(8 DownTo 6);
          Rdst <= IR(2 DownTo 0);
 

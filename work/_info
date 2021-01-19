@@ -23,9 +23,9 @@ VTf082B[Z3_4AgkUdRh]ET1
 !s100 QJi<?<50MKfcnG[EJ[D0i3
 Z8 OP;C;10.4a;61
 32
-Z9 !s110 1611010537
+Z9 !s110 1611027024
 !i10b 1
-Z10 !s108 1611010537.000000
+Z10 !s108 1611027024.000000
 Z11 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|C:/final/PDP-11/partA.vhd|
 Z12 !s107 C:/final/PDP-11/partA.vhd|
 !i113 1
@@ -106,9 +106,9 @@ V<]Zc9?3nOz4^0Uag?8hG=0
 !s100 VFZz<c@M17FFM2lBRR5dY3
 R8
 32
-Z24 !s110 1611010535
+Z24 !s110 1611027023
 !i10b 1
-Z25 !s108 1611010535.000000
+Z25 !s108 1611027022.000000
 Z26 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|C:/final/PDP-11/Branching.vhd|
 Z27 !s107 C:/final/PDP-11/Branching.vhd|
 !i113 1
@@ -148,11 +148,11 @@ VT5z31iI4Y<Qblln467eEU3
 !s100 b3W9XVfFXWm1ni:YYX36i1
 R8
 32
-Z30 !s110 1611010536
+R24
 !i10b 1
-Z31 !s108 1611010536.000000
-Z32 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|C:/final/PDP-11/partC.vhd|
-Z33 !s107 C:/final/PDP-11/partC.vhd|
+Z30 !s108 1611027023.000000
+Z31 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|C:/final/PDP-11/partC.vhd|
+Z32 !s107 C:/final/PDP-11/partC.vhd|
 !i113 1
 R13
 R14
@@ -166,11 +166,11 @@ VVRRN:P2824HMKZl:kLi5^2
 !s100 H`8D8G7=Zai9Tk]P4V]@O0
 R8
 32
-R30
+R24
 !i10b 1
+R30
 R31
 R32
-R33
 !i113 1
 R13
 R14
@@ -180,19 +180,19 @@ R21
 R3
 R4
 R5
-Z34 8C:/final/PDP-11/decoder.vhdl
-Z35 FC:/final/PDP-11/decoder.vhdl
+Z33 8C:/final/PDP-11/decoder.vhdl
+Z34 FC:/final/PDP-11/decoder.vhdl
 l0
 L6
 V6@>MDLS_e>URz?IWTY]aP2
 !s100 ]MD=>^VW@E:nMzW75b<0Z1
 R8
 32
-R30
+R24
 !i10b 1
-R25
-Z36 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|C:/final/PDP-11/decoder.vhdl|
-Z37 !s107 C:/final/PDP-11/decoder.vhdl|
+R30
+Z35 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|C:/final/PDP-11/decoder.vhdl|
+Z36 !s107 C:/final/PDP-11/decoder.vhdl|
 !i113 1
 R13
 R14
@@ -207,21 +207,21 @@ V1na=7=]JTbODf50<6m1EU2
 !s100 ?iHV>D5z]1E]M0<>OL81X2
 R8
 32
-R30
+R24
 !i10b 1
-R25
+R30
+R35
 R36
-R37
 !i113 1
 R13
 R14
 Edmux
-Z38 w1610993507
+Z37 w1610993507
 R3
 R4
 R5
-Z39 8C:/final/PDP-11/partD.vhd
-Z40 FC:/final/PDP-11/partD.vhd
+Z38 8C:/final/PDP-11/partD.vhd
+Z39 FC:/final/PDP-11/partD.vhd
 l0
 L5
 VMKKfE<jnYU1YaE>_aeZ:P1
@@ -231,8 +231,8 @@ R8
 R9
 !i10b 1
 R10
-Z41 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|C:/final/PDP-11/partD.vhd|
-Z42 !s107 C:/final/PDP-11/partD.vhd|
+Z40 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|C:/final/PDP-11/partD.vhd|
+Z41 !s107 C:/final/PDP-11/partD.vhd|
 !i113 1
 R13
 R14
@@ -249,18 +249,18 @@ R8
 R9
 !i10b 1
 R10
+R40
 R41
-R42
 !i113 1
 R13
 R14
 Efinalmux
-Z43 w1611008566
+Z42 w1611008566
 R3
 R4
 R5
-Z44 8C:/final/PDP-11/ALU.vhd
-Z45 FC:/final/PDP-11/ALU.vhd
+Z43 8C:/final/PDP-11/ALU.vhd
+Z44 FC:/final/PDP-11/ALU.vhd
 l0
 L4
 V4QWM;dZI:]DhDHZbcdcMZ2
@@ -270,8 +270,8 @@ R8
 R9
 !i10b 1
 R10
-Z46 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|C:/final/PDP-11/ALU.vhd|
-Z47 !s107 C:/final/PDP-11/ALU.vhd|
+Z45 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|C:/final/PDP-11/ALU.vhd|
+Z46 !s107 C:/final/PDP-11/ALU.vhd|
 !i113 1
 R13
 R14
@@ -288,8 +288,8 @@ R8
 R9
 !i10b 1
 R10
+R45
 R46
-R47
 !i113 1
 R13
 R14
@@ -298,19 +298,19 @@ R20
 R3
 R4
 R5
-Z48 8C:/final/PDP-11/lab3.vhdl
-Z49 FC:/final/PDP-11/lab3.vhdl
+Z47 8C:/final/PDP-11/lab3.vhdl
+Z48 FC:/final/PDP-11/lab3.vhdl
 l0
 L4
 V35ek`>Q[=RgFI1BjaI<FP0
 !s100 G04g3i:UCVIZ5:^G70SOP1
 R8
 32
-R30
+R24
 !i10b 1
-R31
-Z50 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|C:/final/PDP-11/lab3.vhdl|
-Z51 !s107 C:/final/PDP-11/lab3.vhdl|
+R30
+Z49 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|C:/final/PDP-11/lab3.vhdl|
+Z50 !s107 C:/final/PDP-11/lab3.vhdl|
 !i113 1
 R13
 R14
@@ -324,11 +324,11 @@ VO`SEi?4N;>F?R@G^FUMLM1
 !s100 i1G4iR=^jXLiHg`X_oBo30
 R8
 32
-R30
+R24
 !i10b 1
-R31
+R30
+R49
 R50
-R51
 !i113 1
 R13
 R14
@@ -340,19 +340,19 @@ R2
 R3
 R4
 R5
-Z52 8C:/final/PDP-11/lab4.vhdl
-Z53 FC:/final/PDP-11/lab4.vhdl
+Z51 8C:/final/PDP-11/lab4.vhdl
+Z52 FC:/final/PDP-11/lab4.vhdl
 l0
 L5
 V^Yzod_ShalTZc:4R;MSQj3
 !s100 EJkShRzSa9Hj2lb1DWo[01
 R8
 32
-R30
+R24
 !i10b 1
-R31
-Z54 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|C:/final/PDP-11/lab4.vhdl|
-Z55 !s107 C:/final/PDP-11/lab4.vhdl|
+R30
+Z53 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|C:/final/PDP-11/lab4.vhdl|
+Z54 !s107 C:/final/PDP-11/lab4.vhdl|
 !i113 1
 R13
 R14
@@ -369,35 +369,35 @@ VXG:KI?`;?a]4CBHbPhH3M3
 !s100 KPZd3KMQ5Y[WUeW`VARoR3
 R8
 32
-R30
+R24
 !i10b 1
-R31
+R30
+R53
 R54
-R55
 !i113 1
 R13
 R14
 Emapalu
-Z56 w1611006273
+Z55 w1611006273
 R1
 R2
 R21
 R3
 R4
 R5
-Z57 8C:/final/PDP-11/MapALU.vhd
-Z58 FC:/final/PDP-11/MapALU.vhd
+Z56 8C:/final/PDP-11/MapALU.vhd
+Z57 FC:/final/PDP-11/MapALU.vhd
 l0
 L6
 VeD;Ak_YOzNoaUO6zGczbo2
 !s100 _3`E?K;2dT?WU_K9V`f9e2
 R8
 32
-R30
+R24
 !i10b 1
-R31
-Z59 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|C:/final/PDP-11/MapALU.vhd|
-Z60 !s107 C:/final/PDP-11/MapALU.vhd|
+R30
+Z58 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|C:/final/PDP-11/MapALU.vhd|
+Z59 !s107 C:/final/PDP-11/MapALU.vhd|
 !i113 1
 R13
 R14
@@ -414,11 +414,11 @@ VoJG@Xk[V4gTPd]_nUWD>?3
 !s100 37UCQ=EH>KEk:YSNRUD:[1
 R8
 32
-R30
+R24
 !i10b 1
-R31
+R30
+R58
 R59
-R60
 !i113 1
 R13
 R14
@@ -427,19 +427,19 @@ R20
 R3
 R4
 R5
-Z61 8C:/final/PDP-11/nadder.vhd
-Z62 FC:/final/PDP-11/nadder.vhd
+Z60 8C:/final/PDP-11/nadder.vhd
+Z61 FC:/final/PDP-11/nadder.vhd
 l0
 L4
 VDMeWB>T<TLM1A^n;fD>KD1
 !s100 9dXSTJSA2K3laH^Pk:dhn3
 R8
 32
-R30
+R24
 !i10b 1
-R31
-Z63 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|C:/final/PDP-11/nadder.vhd|
-Z64 !s107 C:/final/PDP-11/nadder.vhd|
+R30
+Z62 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|C:/final/PDP-11/nadder.vhd|
+Z63 !s107 C:/final/PDP-11/nadder.vhd|
 !i113 1
 R13
 R14
@@ -453,11 +453,11 @@ Vo0JSoQ4HUD?g@Q?RMU<QX2
 !s100 kMjAGce2nge1<iUcGW1eE2
 R8
 32
-R30
+R24
 !i10b 1
-R31
+R30
+R62
 R63
-R64
 !i113 1
 R13
 R14
@@ -466,19 +466,19 @@ R20
 R3
 R4
 R5
+R60
 R61
-R62
 l0
 L21
 Vgjfo<R0T3:>SHfNEk00m=1
 !s100 aN_b]CFNHcTi8]G]Sk8a53
 R8
 32
-R30
+R24
 !i10b 1
-R31
+R30
+R62
 R63
-R64
 !i113 1
 R13
 R14
@@ -492,11 +492,11 @@ VPGnzFFgL>0<lX1WXca:f^1
 !s100 _WRWa;B]lK5bIdPVF[SG91
 R8
 32
-R30
+R24
 !i10b 1
-R31
+R30
+R62
 R63
-R64
 !i113 1
 R13
 R14
@@ -505,19 +505,19 @@ R20
 R3
 R4
 R5
-Z65 8C:/final/PDP-11/register.vhdl
-Z66 FC:/final/PDP-11/register.vhdl
+Z64 8C:/final/PDP-11/register.vhdl
+Z65 FC:/final/PDP-11/register.vhdl
 l0
 L3
 VSGHz:5_^o]2E;BP;K>]213
 !s100 FXMLeg7NI7c7i]PM?Z4hJ1
 R8
 32
-R30
+R9
 !i10b 1
-R31
-Z67 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|C:/final/PDP-11/register.vhdl|
-Z68 !s107 C:/final/PDP-11/register.vhdl|
+R30
+Z66 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|C:/final/PDP-11/register.vhdl|
+Z67 !s107 C:/final/PDP-11/register.vhdl|
 !i113 1
 R13
 R14
@@ -531,74 +531,74 @@ VR5=P@a>JcDZaOKU_=La1a3
 !s100 FlTmR77ma1DbMX4oTk6bW1
 R8
 32
-R30
+R9
 !i10b 1
-R31
+R30
+R66
 R67
-R68
 !i113 1
 R13
 R14
 Epdp_11
-Z69 w1611013034
+Z68 w1611033636
 R3
 R4
 R5
-Z70 8C:/final/PDP-11/PDP_11.vhd
-Z71 FC:/final/PDP-11/PDP_11.vhd
+Z69 8C:/final/PDP-11/PDP_11.vhd
+Z70 FC:/final/PDP-11/PDP_11.vhd
 l0
 L4
 V0L1S><dbOb;IPUZ499jJ>2
 !s100 M1=Xl9EIHd>R=Z]V?O0100
 R8
 32
-Z72 !s110 1611013098
+Z71 !s110 1611033901
 !i10b 1
-Z73 !s108 1611013098.000000
-Z74 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|C:/final/PDP-11/PDP_11.vhd|
-Z75 !s107 C:/final/PDP-11/PDP_11.vhd|
+Z72 !s108 1611033901.000000
+Z73 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|C:/final/PDP-11/PDP_11.vhd|
+Z74 !s107 C:/final/PDP-11/PDP_11.vhd|
 !i113 1
 R13
 R14
 Amy_pdp_11
 R3
 R4
-Z76 DEx4 work 6 pdp_11 0 22 0L1S><dbOb;IPUZ499jJ>2
-l145
+DEx4 work 6 pdp_11 0 22 0L1S><dbOb;IPUZ499jJ>2
+l147
 L12
-Z77 VX_Ci>TPPag<QLNK_:=j371
-Z78 !s100 jj2HN>=:=:Y[5dU@2OUNd3
+VaU_IX2LZ9][Bc7CmQ?b^]2
+!s100 heI0:flXcJDYK74Z=2n7R2
 R8
 32
-R72
+R71
 !i10b 1
+R72
 R73
 R74
-R75
 !i113 1
 R13
 R14
 Epla
-R56
+Z75 w1611026578
 R1
 R2
 R21
 R3
 R4
 R5
-Z79 8C:/final/PDP-11/PLA.vhd
-Z80 FC:/final/PDP-11/PLA.vhd
+Z76 8C:/final/PDP-11/PLA.vhd
+Z77 FC:/final/PDP-11/PLA.vhd
 l0
 L6
 VMVUg]>Do2a0O4mKhcOZ<Y1
 !s100 XbDg?RAkWK4bjzOIERQ_n0
 R8
 32
-R30
+R24
 !i10b 1
-R31
-Z81 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|C:/final/PDP-11/PLA.vhd|
-Z82 !s107 C:/final/PDP-11/PLA.vhd|
+R30
+Z78 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|C:/final/PDP-11/PLA.vhd|
+Z79 !s107 C:/final/PDP-11/PLA.vhd|
 !i113 1
 R13
 R14
@@ -609,37 +609,37 @@ R21
 R3
 R4
 DEx4 work 3 pla 0 22 MVUg]>Do2a0O4mKhcOZ<Y1
-l14
+l16
 L10
-V]`NAIIQTZ]d=OJTbOmi;`1
-!s100 U`=OOlBQLMbz<>Z=lHefi1
+V><zD7Q2gNjQSaLVX[2hSh0
+!s100 ?E06Xa:UD0mQR8Po;3GhE0
 R8
 32
-R30
+R24
 !i10b 1
-R31
-R81
-R82
+R30
+R78
+R79
 !i113 1
 R13
 R14
 Eram
-R56
+Z80 w1611028884
 R21
 R3
 R4
 R5
-Z83 8C:/final/PDP-11/ram.vhd
-Z84 FC:/final/PDP-11/ram.vhd
+Z81 8C:/final/PDP-11/ram.vhd
+Z82 FC:/final/PDP-11/ram.vhd
 l0
 L5
 Vhd>7mAgd5of?iEkE;^CP>1
 !s100 9^:;G4^<:fcKW>WmOQNH33
 R8
 32
-R30
+Z83 !s110 1611028890
 !i10b 1
-R31
+Z84 !s108 1611028890.000000
 Z85 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|C:/final/PDP-11/ram.vhd|
 Z86 !s107 C:/final/PDP-11/ram.vhd|
 !i113 1
@@ -652,37 +652,37 @@ R4
 DEx4 work 3 ram 0 22 hd>7mAgd5of?iEkE;^CP>1
 l23
 L15
-VjdDZM>Va@R7UbaHXKRiN`3
-!s100 4kLLWKV_lQmNWQhJ2Q[UL0
+VmF;TboEIZEL00:GU67_JH0
+!s100 >lM:6BX^96VWACd=KFZBF1
 R8
 32
-R30
+R83
 !i10b 1
-R31
+R84
 R85
 R86
 !i113 1
 R13
 R14
 Erom
-R56
+Z87 w1611027089
 R21
 R3
 R4
 R5
-Z87 8C:/final/PDP-11/rom.vhd
-Z88 FC:/final/PDP-11/rom.vhd
+Z88 8C:/final/PDP-11/rom.vhd
+Z89 FC:/final/PDP-11/rom.vhd
 l0
 L5
 VSS=@?T>PR@5VaAfeUL@7H2
 !s100 Pf4a_O6hVI@[JCQ><?XRF1
 R8
 32
-R30
+Z90 !s110 1611027093
 !i10b 1
-R31
-Z89 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|C:/final/PDP-11/rom.vhd|
-Z90 !s107 C:/final/PDP-11/rom.vhd|
+Z91 !s108 1611027093.000000
+Z92 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|C:/final/PDP-11/rom.vhd|
+Z93 !s107 C:/final/PDP-11/rom.vhd|
 !i113 1
 R13
 R14
@@ -693,15 +693,15 @@ R4
 DEx4 work 3 rom 0 22 SS=@?T>PR@5VaAfeUL@7H2
 l383
 L15
-VgfX]g69zMOlYkHP1?6]U=2
-!s100 kjE@0YFbzd6^<J^BAn_VW1
+V8gS?47U>Ilb4;jdGf:fA[0
+!s100 fFbNcH32UKg5B`_FDdngK3
 R8
 32
-R30
-!i10b 1
-R31
-R89
 R90
+!i10b 1
+R91
+R92
+R93
 !i113 1
 R13
 R14
@@ -710,8 +710,8 @@ R20
 R3
 R4
 R5
-Z91 8C:/final/PDP-11/triStateBuffer.vhdl
-Z92 FC:/final/PDP-11/triStateBuffer.vhdl
+Z94 8C:/final/PDP-11/triStateBuffer.vhdl
+Z95 FC:/final/PDP-11/triStateBuffer.vhdl
 l0
 L4
 Vn>TCXj367[@K>X@:efMd[0
@@ -721,8 +721,8 @@ R8
 R9
 !i10b 1
 R10
-Z93 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|C:/final/PDP-11/triStateBuffer.vhdl|
-Z94 !s107 C:/final/PDP-11/triStateBuffer.vhdl|
+Z96 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|C:/final/PDP-11/triStateBuffer.vhdl|
+Z97 !s107 C:/final/PDP-11/triStateBuffer.vhdl|
 !i113 1
 R13
 R14
@@ -739,8 +739,8 @@ R8
 R9
 !i10b 1
 R10
-R93
-R94
+R96
+R97
 !i113 1
 R13
 R14

@@ -11,8 +11,11 @@ Architecture pla OF PLA IS
 	
     SIGNAL uPC : std_logic_vector(8 DOWNTO 0) := "000000000" ;
     SIGNAL Temp : std_logic_vector(8 DOWNTO 0) := "000000000" ;
+   
+
 BEGIN    
-     PROCESS(En,clk) IS  
+     PROCESS(En,clk) IS 
+   
         BEGIN
             IF En= '1' THEN
                 IF BitOring( 2 downto 0) = "101" THEN
@@ -94,11 +97,12 @@ BEGIN
                         uPc <= Temp;   
                     END IF; 
                 ElSIF (BitOring(2 DownTo 0) ="100") AND ((uPC ="010111010") OR (uPC ="100110111")) THEN        --Or Result -> Fetch instruction
-                    IF (IR(15 DownTo 12) = "1000" OR (not IR(15)) ='1') THEN           --Two Operands
-                        IF IR(15 DownTo 12) = "0000" THEN      --MOV    
+                    IF (IR(15 DownTo 12) = "1000" OR  IR(15)='0') THEN           --Two Operands
+                        IF IR(15 DownTo 12) = "0000" THEN      --MOV            
                             Temp <=  "100111000";
                             uPc <= Temp; 
-                        ELSIF IR(15 DownTo 12) = "0001" THEN      --ADD        
+                        ELSIF IR(15 DownTo 12) = "0001" THEN      --ADD  
+			
                             Temp <=  "100111010";
                             uPc <= Temp; 
                         ELSIF IR(15 DownTo 12) = "0010" THEN      --ADC        

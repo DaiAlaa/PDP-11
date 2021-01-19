@@ -108,6 +108,14 @@ Model Technology ModelSim PE Student Edition vcom 10.4a Compiler 2015.03 Apr  7 
 -- Compiling entity dmux
 -- Compiling architecture d_mux of dmux
 
+} {} {}} C:/final/PDP-11/PDP_11.vhd {1 {vcom -work work -2002 -explicit -stats=none C:/final/PDP-11/PDP_11.vhd
+Model Technology ModelSim PE Student Edition vcom 10.4a Compiler 2015.03 Apr  7 2015
+-- Loading package STANDARD
+-- Loading package TEXTIO
+-- Loading package std_logic_1164
+-- Compiling entity PDP_11
+-- Compiling architecture my_PDP_11 of PDP_11
+
 } {} {}} C:/final/PDP-11/rom.vhd {1 {vcom -work work -2002 -explicit -stats=none C:/final/PDP-11/rom.vhd
 Model Technology ModelSim PE Student Edition vcom 10.4a Compiler 2015.03 Apr  7 2015
 -- Loading package STANDARD
