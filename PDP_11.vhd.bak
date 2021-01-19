@@ -6,20 +6,6 @@ GENERIC ( n : integer := 16);
 	port( 
 	      Clk : IN std_logic;
               Rst : IN std_logic; 
-	      r00 : out std_logic_vector (n-1 downto 0);
- 	      r11 : out std_logic_vector (n-1 downto 0);
-              r22 : out std_logic_vector (n-1 downto 0);
-              r33 : out std_logic_vector (n-1 downto 0);
-	      r44 : out std_logic_vector (n-1 downto 0);
- 	      r55 : out std_logic_vector (n-1 downto 0);
-              r66 : out std_logic_vector (n-1 downto 0);
-              r77 : out std_logic_vector (n-1 downto 0);
-	      yy : out std_logic_vector (n-1 downto 0);
-	      zz : out std_logic_vector (n-1 downto 0);
-	      mar1 : out std_logic_vector (n-1 downto 0);
-	      mdr1 : out std_logic_vector (n-1 downto 0);
-	      temp1 : out std_logic_vector (n-1 downto 0);
-	      flag1 : out std_logic_vector (n-1 downto 0);
               outbus : inout std_logic_vector (n-1 downto 0));
 end entity;
 
@@ -155,7 +141,7 @@ Architecture my_PDP_11 OF PDP_11 IS
 	 signal ALUIn: std_logic_vector(15 downto 0);
 	 signal CarryInput: std_logic;
          signal Rsrc,Rdst : std_logic_vector (2 downto 0);
-	 ---signal control: std_logic;
+	 signal control: std_logic ;
 	 signal yin: std_logic_vector(15 downto 0);
          
 Begin
@@ -168,6 +154,9 @@ Begin
          ELSE '1';
          F4_enable <= '0' WHEN control_word(16 downto 15) ="00"
          ELSE '1';
+
+         control <= '1' WHEN (F2_output(1) = '1' OR (Rsrc = "111" AND control_word(18 downto 17) ="10") OR (Rdst = "111" AND control_word(18 downto 17) ="11"))
+                        ELSE '0';
          select_src_dst_out <= Rsrc WHEN control_word(23 downto 21) ="100"
                       ELSE Rdst WHEN control_word(23 downto 21) ="101"
                       ELSE (OTHERS=>'0');
@@ -208,7 +197,7 @@ Begin
          select_reg_in : decoder GENERIC MAP(3) port map(select_enable_in,select_src_dst_in, select_register_in); 
 
          ---------- F2 ---------
-	 reg7: my_nDFF GENERIC MAP(16) port map(F2_output(1),Clk,Rst,outbus,R7);
+	 reg7: my_nDFF GENERIC MAP(16) port map(control,Clk,Rst,outbus,R7);
 	 flag_reg: my_nDFF GENERIC MAP(16) port map(F2_output(3),Clk,Rst,outbus,flag);
          IR_reg: my_nDFF GENERIC MAP(16) port map(F2_output(2),Clk,Rst,outbus,IR);
          ---------- F3 ------------

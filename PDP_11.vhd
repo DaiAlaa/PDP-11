@@ -58,7 +58,7 @@ Architecture my_PDP_11 OF PDP_11 IS
 	 PORT( 
                 IR,flag : in std_logic_vector (15 downto 0) ;
                 BitOring : IN std_logic_vector (2 downto 0); 
-                En,clk : in std_logic ;
+                En,Rst,clk : in std_logic ;
                 uPCOUT : OUT std_logic_vector (8 DOWNTO 0));
          END  COMPONENT;    
 
@@ -141,7 +141,8 @@ Architecture my_PDP_11 OF PDP_11 IS
 	 signal ALUIn: std_logic_vector(15 downto 0);
 	 signal CarryInput: std_logic;
          signal Rsrc,Rdst : std_logic_vector (2 downto 0);
-	 ---signal control: std_logic;
+	 signal control: std_logic ;
+	 signal controlIN: std_logic ;
 	 signal yin: std_logic_vector(15 downto 0);
          
 Begin
@@ -154,6 +155,22 @@ Begin
          ELSE '1';
          F4_enable <= '0' WHEN control_word(16 downto 15) ="00"
          ELSE '1';
+
+         control <= '1' WHEN (F2_output(1) = '1' OR (Rsrc = "111" AND control_word(18 downto 17) ="10") OR (Rdst = "111" AND control_word(18 downto 17) ="11"))
+                        ELSE '0';
+
+
+
+
+
+
+         controlIN <= '1' WHEN (F1_output(1) = '1' OR (Rsrc = "111" AND control_word(23 downto 21) ="100") OR (Rdst = "111" AND control_word(23 downto 21) ="101"))
+                        ELSE '0';    
+
+
+
+
+
          select_src_dst_out <= Rsrc WHEN control_word(23 downto 21) ="100"
                       ELSE Rdst WHEN control_word(23 downto 21) ="101"
                       ELSE (OTHERS=>'0');
@@ -167,16 +184,14 @@ Begin
                       ELSE '0';
          
          MDRsignal <= Ram_out WHEN control_word(7 downto 6) = "01"
-                      ELSE outbus ;
+                      ELSE  outbus ;
 
          MDRenable <= '1' WHEN control_word(7 downto 6) = "01"
                       ELSE F4_output(2) ;
 
          Ram_clk <= not Clk;
-         Ram_enable <= '1' WHEN control_word(7 downto 6) = "01" or control_word(7 downto 6) = "10"
-                     ELSE '0';
 
-         Ram_enable <= '1' WHEN control_word(7 downto 6) = "01" or control_word(7 downto 6) = "10"
+         Ram_enable <= '1' WHEN control_word(7 downto 6) = "10"
                      ELSE '0';
 
 
@@ -194,7 +209,7 @@ Begin
          select_reg_in : decoder GENERIC MAP(3) port map(select_enable_in,select_src_dst_in, select_register_in); 
 
          ---------- F2 ---------
-	 reg7: my_nDFF GENERIC MAP(16) port map(F2_output(1),Clk,Rst,outbus,R7);
+	 reg7: my_nDFF GENERIC MAP(16) port map(control,Clk,Rst,outbus,R7);
 	 flag_reg: my_nDFF GENERIC MAP(16) port map(F2_output(3),Clk,Rst,outbus,flag);
          IR_reg: my_nDFF GENERIC MAP(16) port map(F2_output(2),Clk,Rst,outbus,IR);
          ---------- F3 ------------
@@ -222,7 +237,7 @@ Begin
 	 tri5: tri_state_buffer port map(select_register_out(5),R5,outbus);
 	 tri6: tri_state_buffer port map(select_register_out(6),R6,outbus);
          ---------- F1 --------
-	 tri7: tri_state_buffer port map(F1_output(1),R7,outbus);
+	 tri7: tri_state_buffer port map(controlIN,R7,outbus);
          tri_MDR: tri_state_buffer port map(F1_output(2),MDR,outbus);
          tri_Z: tri_state_buffer port map(F1_output(3),Z,outbus);
          tri_temp: tri_state_buffer port map(F1_output(6),temp,outbus);
@@ -232,9 +247,9 @@ Begin
 
          my_ram: ram PORT MAP(Ram_clk,Ram_enable,MAR,MDR,Ram_out);              --Address Size
          my_rom: rom PORT MAP(Ram_clk,'0',uPC,(OTHERS=>'0'),control_word);              -- write enable always 0
-         MDR_reg: my_nDFF GENERIC MAP(16) port map(MDRenable,Clk,Rst,MDRsignal,MDR);
+         MDR_reg: my_nDFF GENERIC MAP(16) port map(MDRenable,Ram_clk,Rst,MDRsignal,MDR);
 
-         my_PLA: PLA PORT MAP(IR,flag,control_word(3 downto 1),control_word(0),Clk,uPC); 
+         my_PLA: PLA PORT MAP(IR,flag,control_word(3 downto 1),control_word(0),Rst,Clk,uPC); 
          --Branching: Branch PORT MAP(IR,flag,R7,R7);
          MappingALU: MapALU PORT MAP(control_word(12 downto 8),Cin,CMP,S(3 downto 0)); 
          CarryInput<=flag(0); 
